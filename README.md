@@ -14,28 +14,16 @@ $ npm i vue-button-animation
 ## Usage
 In your components template:
 ```vue
-<template>
-    <button-basic color="primary" size="ss">Button</button-basic>
-    <button-basic color="secondary" size="s">Button</button-basic>
-    <button-basic color="success" size="m">Button</button-basic>
-    <button-basic color="danger" size="l">Button</button-basic>
-</template>
-
-<script>
-  export default {
-    data () {
-      return {}
-    },
-  }
-</script>
+<button-basic color="primary" size="ss">Button</button-basic>
+<button-basic color="secondary" size="s">Button</button-basic>
+<button-basic color="success" size="m">Button</button-basic>
+<button-basic color="danger" size="l">Button</button-basic>
 ```
 
 In your main.js file:
 ```js
 import VueButtonAnimation from 'vue-button-animation'
 
-Vue.use(VueDragDrop);
-Vue.use(VueI18n);
 Vue.use(VueButtonAnimation);
 ```
 
