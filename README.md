@@ -13,11 +13,21 @@ $ npm i vue-button-animation
 
 ## Usage
 In your components template:
-```html
-<button-basic color="primary" size="ss">Button</button-basic>
-<button-basic color="secondary" size="s">Button</button-basic>
-<button-basic color="success" size="m">Button</button-basic>
-<button-basic color="danger" size="l">Button</button-basic>
+```vue
+<template>
+    <button-basic color="primary" size="ss">Button</button-basic>
+    <button-basic color="secondary" size="s">Button</button-basic>
+    <button-basic color="success" size="m">Button</button-basic>
+    <button-basic color="danger" size="l">Button</button-basic>
+</template>
+
+<script>
+  export default {
+    data () {
+      return {}
+    },
+  }
+</script>
 ```
 
 In your main.js file:
