@@ -1,5 +1,5 @@
 # vue-button-animation
-> Animated Buttons for Vue.js
+Animated Buttons for Vue.js
 
 <br>
 
@@ -30,7 +30,7 @@ Vue.use(VueButtonAnimation);
 <br>
 
 ## Available Props
-| Prop     | type (range) | default value |
+| Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
 | color    | String ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'link') | 'primary' |
 | size     | String ('ss', 's', 'm', 'l') | 's' |
