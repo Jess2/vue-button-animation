@@ -1,14 +1,36 @@
 {
   "name": "vue-button-animation",
   "version": "0.1.0",
-  "private": true,
+  "description": "Animated Buttons for Vue.js",
+  "author": "JESS2 <jess2.developer@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "./dist/vue-button-animation.js",
+  "homepage": "https://github.com/JESS2/vue-button-animation#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JESS2/vue-button-animation"
+  },
+  "bug": {
+    "url": "https://github.com/JESS2/vue-button-animation/issues"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "button",
+    "ui",
+    "animation",
+    "interaction"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-button-animation src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -18,7 +40,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^4.2.0"
   },
   "eslintConfig": {
     "root": true,

@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button-basic color="primary">Basic</button-basic>
+    <button-basic color="secondary" size="ss">Basic</button-basic>
+    <button-basic color="success" size="s">Basic</button-basic>
+    <button-basic color="danger" size="m">Basic</button-basic>
+    <button-basic color="warning" size="l">Basic</button-basic>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    data () {
+      return {
+      }
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    padding: 10px;
+  }
 </style>
