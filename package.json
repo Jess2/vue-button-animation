@@ -5,7 +5,7 @@
   "author": "JESS2 <jess2.developer@gmail.com>",
   "license": "MIT",
   "private": false,
-  "main": "./dist/vue-button-animation.js",
+  "main": "./dist/vue-button-animation.common.js",
   "homepage": "https://github.com/JESS2/vue-button-animation#readme",
   "repository": {
     "type": "git",

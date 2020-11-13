@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'vue-button-animation.js',
+    filename: 'vue-button-animation.common.js',
     library: 'ButtonAnimation',
     libraryTarget: 'umd',
     umdNamedDefine: true
