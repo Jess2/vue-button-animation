@@ -1,9 +1,9 @@
 <template>
-		<span style="display: inline-block;">
-			<button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]" class="v-btn v-button-basic">
-				<span><slot></slot></span>
-			</button>
-		</span>
+    <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]" class="v-btn v-btn-basic">
+      <span>
+        <slot></slot>
+      </span>
+    </button>
 </template>
 
 <script>

@@ -2,14 +2,15 @@
     padding: 0;
     border: none;
     vertical-align: middle;
-    position: relative;
-    -webkit-backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
     cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
 }
-.v-btn:focus {
-    outline: none;
-}
-.v-btn > span {
-    vertical-align: middle;
+
+.v-btn-basic {
+    &:hover {
+        opacity: 0.8;
+    }
 }

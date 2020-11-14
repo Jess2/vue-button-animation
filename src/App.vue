@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <button-basic color="primary">Basic</button-basic>
+    <button-basic color="primary">안녕하세요</button-basic>
     <button-basic color="secondary" size="ss">Basic</button-basic>
     <button-basic color="success" size="s">Basic</button-basic>
     <button-basic color="danger" size="m">Basic</button-basic>
