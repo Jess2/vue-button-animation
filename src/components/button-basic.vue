@@ -1,6 +1,6 @@
 <template>
 		<span style="display: inline-block;">
-			<button :class="[color, size]" class="btn">
+			<button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]" class="v-btn v-button-basic">
 				<span><slot></slot></span>
 			</button>
 		</span>

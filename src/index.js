@@ -1,5 +1,5 @@
-import './assets/css/app.css';
-import buttonBasic from './lib/button-basic.vue';
+import './assets/style/app.scss';
+import buttonBasic from './components/button-basic.vue';
 
 const BUTTON = {
   install (Vue) {

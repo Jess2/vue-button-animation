@@ -1,0 +1,15 @@
+.v-btn {
+    padding: 0;
+    border: none;
+    vertical-align: middle;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+}
+.v-btn:focus {
+    outline: none;
+}
+.v-btn > span {
+    vertical-align: middle;
+}
