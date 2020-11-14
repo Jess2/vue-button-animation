@@ -16,7 +16,7 @@
       },
       size: {
         type: [Number, String],
-        default: 's',
+        default: 'm',
       }
     },
     data () {

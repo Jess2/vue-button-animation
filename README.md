@@ -14,10 +14,13 @@ $ npm i vue-button-animation
 ## Usage
 In your components template:
 ```vue
+<button-basic>Button</button-basic>
 <button-basic color="primary" size="ss">Button</button-basic>
 <button-basic color="secondary" size="s">Button</button-basic>
 <button-basic color="success" size="m">Button</button-basic>
 <button-basic color="danger" size="l">Button</button-basic>
+<button-basic color="info" size="30">Button</button-basic>
+<button-basic color="dark" size="256">Button</button-basic>
 ```
 
 In your main.js file:
@@ -33,7 +36,7 @@ Vue.use(VueButtonAnimation);
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
 | color    | String ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'link') | 'primary' |
-| size     | String ('ss', 's', 'm', 'l') | 's' |
+| size     | String ('ss', 's', 'm', 'l') or Number (1 ~ 256(px)) | 'm' |
 
 <br>
 
