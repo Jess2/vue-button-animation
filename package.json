@@ -1,6 +1,6 @@
 {
   "name": "vue-button-animation",
-  "version": "0.1.0-beta.7",
+  "version": "0.1.0-beta.8",
   "description": "Animated Buttons for Vue.js",
   "author": "JESS2 <jess2.developer@gmail.com>",
   "license": "MIT",
@@ -28,9 +28,6 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -40,6 +37,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^7.3.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.5.0",
     "webpack-cli": "^4.2.0"
