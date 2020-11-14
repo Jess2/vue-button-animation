@@ -1,5 +1,5 @@
 <template>
-    <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]" class="v-btn v-btn-basic">
+    <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]" class="v-btn v-btn--basic">
       <span>
         <slot></slot>
       </span>
