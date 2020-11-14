@@ -15,7 +15,7 @@
 				default: 'primary',
       },
       size: {
-        type: String,
+        type: [Number, String],
         default: 's',
       }
     },
@@ -32,4 +32,5 @@
 </script>
 
 <style scoped lang="scss">
+  @import '../assets/style/button-basic.scss';
 </style>

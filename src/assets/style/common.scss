@@ -1,3 +1,6 @@
+* {
+    font-family: sans-serif;
+}
 .v-btn {
     padding: 0;
     border: none;
@@ -6,11 +9,5 @@
 
     &:focus {
         outline: none;
-    }
-}
-
-.v-btn--basic {
-    &:hover {
-        opacity: 0.8;
     }
 }

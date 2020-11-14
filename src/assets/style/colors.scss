@@ -1,36 +1,38 @@
-.v-btn--color-primary {
-	background: #0069d9;
-	color: #ffffff;
-}
-.v-btn--color-secondary {
-	background: #6c757d;
-	color: #ffffff;
-}
-.v-btn--color-success {
-	background: #28a745;
-	color: #ffffff;
-}
-.v-btn--color-danger {
-	background: #c82333;
-	color: #ffffff;
-}
-.v-btn--color-warning {
-	background: #ffc107;
-	color: #ffffff;
-}
-.v-btn--color-info {
-	background: #17a2b8;
-	color: #ffffff;
-}
-.v-btn--color-light {
-	background: #f8f9fa;
-	color: #ffffff;
-}
-.v-btn--color-dark {
-	background: #343a40;
-	color: #ffffff;
-}
-.v-btn--color-link {
-	color: #007bff;
-	background-color: transparent;
+.v-btn--color {
+	&-primary {
+		background: #0069d9;
+		color: #ffffff;
+	}
+	&-secondary {
+		background: #6c757d;
+		color: #ffffff;
+	}
+	&-success {
+		background: #28a745;
+		color: #ffffff;
+	}
+	&-danger {
+		background: #c82333;
+		color: #ffffff;
+	}
+	&-warning {
+		background: #ffc107;
+		color: #ffffff;
+	}
+	&-info {
+		background: #17a2b8;
+		color: #ffffff;
+	}
+	&-light {
+		background: #f8f9fa;
+		color: #343a40;
+	}
+	&-dark {
+		background: #343a40;
+		color: #ffffff;
+	}
+	&-link {
+		background: transparent;
+		color: #007bff;
+	}
 }
