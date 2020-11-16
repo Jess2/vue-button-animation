@@ -39,7 +39,7 @@ Vue.use(VueButtonAnimation);
 | color    | String ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'link') | 'primary' |
 | size     | String ('ss', 's', 'm', 'l') or Number (1 ~ 256(px)) | 'm' |
 
-<br>
+<br><br>
 
 ## Available Events
 | Event      | Description |
@@ -54,7 +54,7 @@ Vue.use(VueButtonAnimation);
 | mouseover  | The event occurs when the pointer is moved onto an element, or onto one of its children |
 | mouseup    | The event occurs when a user releases a mouse button over an element |
 
-<br>
+<br><br>
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)

@@ -1,6 +1,7 @@
 <template>
   <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]"
           class="v-btn v-btn--basic"
+          :style="style"
           @click="onClick"
           @dblclick="onDblclick"
           @mousedown="onMousedown"
@@ -26,13 +27,34 @@
       },
       size: {
         type: [Number, String],
-        default: 'm',
+        default: 'basic',
+      },
+      weight: {
+        type: [Number, String],
+        default: 800,
+      },
+      width: {
+        type: [Number, String],
+        default: 'auto',
+      },
+      height: {
+        type: [Number, String],
+        default: 'auto',
       }
     },
     data () {
       return {}
     },
-    computed: {},
+    computed: {
+      style () {
+        return {
+          'minWidth': typeof this.width === 'number' ? this.width + 'px' : this.width,
+          'minHeight': typeof this.height === 'number' ? this.height + 'px' : this.height,
+          'fontSize': typeof this.size === 'number' ? this.size + 'px' : this.size,
+          'fontWeight': this.weight,
+        }
+      }
+    },
     mounted () {
     },
     watch: {},
@@ -70,5 +92,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/button-basic.scss';
+  @import '../assets/style/buttonBasic.scss';
 </style>

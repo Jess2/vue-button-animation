@@ -1,0 +1,7 @@
+.v-btn--weight {
+    @for $i from 1 to 10 {
+        &-#{$i * 100} {
+            font-weight: #{$i * 100};
+        }
+    }
+}

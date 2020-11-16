@@ -1,25 +1,25 @@
 .v-btn--size {
     &-ss {
-        font-size: 0.5rem;
-        padding: 0.8em 2em;
+        font-size: 0.75rem;
     }
     &-s {
-        font-size: 0.8rem;
-        padding: 0.8em 2em;
+        font-size: 0.875rem;
     }
     &-m {
         font-size: 1rem;
-        padding: 0.8em 2em;
     }
     &-l {
-        font-size: 1.2rem;
-        padding: 0.8em 2em;
+        font-size: 1.5rem;
     }
-
-    @for $i from 1 to 257 {
-        &-#{$i} {
-            font-size: #{$i}px;
-            padding: 0.8em 2em;
-        }
+    &-basic {
+        font-size: 1rem;
+        min-width: 120px;
+        min-height: 40px;
+    }
+    &-wide {
+        font-size: 1.5rem;
+        padding: 0.5em 2em 0.51em;
+        min-width: 690px;
+        min-height: 88px;
     }
 }

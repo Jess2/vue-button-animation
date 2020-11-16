@@ -1,11 +1,17 @@
-* {
-    font-family: sans-serif;
+@font-face {
+    font-family: NotoSansKR;
+    src: url('../font/NotoSansKR-Medium.woff') format("woff2"), url('../font/NotoSansKR-Medium.woff') format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
 }
+
 .v-btn {
-    padding: 0;
     border: none;
     vertical-align: middle;
     cursor: pointer;
+    font-family: NotoSansKR, sans-serif;
+    padding: 0.5em 1em 0.51em;
 
     &:focus {
         outline: none;

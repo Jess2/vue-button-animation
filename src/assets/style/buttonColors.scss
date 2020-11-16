@@ -1,0 +1,119 @@
+.v-btn--color {
+	&-primary {
+		background: #0069d9;
+		color: $white;
+	}
+	&-secondary {
+		background: #6c757d;
+		color: $white;
+	}
+	&-success {
+		background: #28a745;
+		color: $white;
+	}
+	&-danger {
+		background: #c82333;
+		color: $white;
+	}
+	&-warning {
+		background: #ffc107;
+		color: $white;
+	}
+	&-info {
+		background: #17a2b8;
+		color: $white;
+	}
+	&-light {
+		background: #f8f9fa;
+		color: #343a40;
+	}
+	&-dark {
+		background: #343a40;
+		color: $white;
+	}
+	&-link {
+		background: transparent;
+		color: #007bff;
+	}
+	&-dark {
+		background: $gray900;
+		color: $white;
+	}
+	&-maxwork {
+		background: $blue500;
+		color: $white;
+	}
+	&-remote {
+		background: $green400;
+		color: $white;
+	}
+	&-create {
+		background: $orange400;
+		color: $white;
+	}
+	&-admin {
+		background: $yellow400;
+		color: $white;
+	}
+	&-red {
+		background: $red400;
+		color: $white;
+	}
+	&-white {
+		background: $white;
+		color: $gray900;
+	}
+	&-white-blue {
+		background: $white;
+		color: $blue500;
+	}
+	&-white-border {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: transparent;
+				color: $white;
+				box-shadow: 0 0 0 #{$i}px $white inset;
+			}
+		}
+	}
+	&-white-border-blue {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: transparent;
+				color: $white;
+				box-shadow: 0 0 0 #{$i}px $white inset;
+			}
+		}
+	}
+	&-gray-border {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: $white;
+				color: $gray900;
+				box-shadow: 0 0 0 #{$i}px $gray300 inset;
+			}
+		}
+	}
+	&-maxwork-border {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: $white;
+				color: $blue500;
+				box-shadow: 0 0 0 #{$i}px $blue500 inset;
+			}
+		}
+	}
+	&-file {
+		background: linear-gradient(to bottom, $white 1%, $gray100);
+		color: $gray900;
+		box-shadow: 0 0 0 0.5px $gray400 inset;
+	}
+	&-lite {
+		background: $cyan300;
+		color: $white;
+	}
+	&-enterprise {
+		background: $blue900;
+		color: $white;
+	}
+}
