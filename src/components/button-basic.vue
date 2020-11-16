@@ -1,9 +1,19 @@
 <template>
-    <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]" class="v-btn v-btn--basic">
+  <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]"
+          class="v-btn v-btn--basic"
+          @click="onClick"
+          @dblclick="onDblclick"
+          @mousedown="onMousedown"
+          @mouseup="onMouseup"
+          @mouseenter="onMouseenter"
+          @mouseleave="onMouseleave"
+          @mousemove="onMousemove"
+          @mouseout="onMouseout"
+          @mouseover="onMouseover">
       <span>
         <slot></slot>
       </span>
-    </button>
+  </button>
 </template>
 
 <script>
@@ -12,7 +22,7 @@
     props: {
       color: {
         type: String,
-				default: 'primary',
+        default: 'primary',
       },
       size: {
         type: [Number, String],
@@ -26,7 +36,35 @@
     mounted () {
     },
     watch: {},
-    methods: {},
+    methods: {
+      onClick (e) {
+        this.$emit('click', e);
+      },
+      onDblclick (e) {
+        this.$emit('dblclick', e);
+      },
+      onMousedown (e) {
+        this.$emit('mousedown', e);
+      },
+      onMouseup (e) {
+        this.$emit('mouseup', e);
+      },
+      onMouseenter (e) {
+        this.$emit('mouseenter', e);
+      },
+      onMouseleave (e) {
+        this.$emit('mouseleave', e);
+      },
+      onMousemove (e) {
+        this.$emit('mousemove', e);
+      },
+      onMouseout (e) {
+        this.$emit('mouseout', e);
+      },
+      onMouseover (e) {
+        this.$emit('mouseover', e);
+      },
+    },
     components: {}
   }
 </script>
