@@ -27,7 +27,7 @@
       },
       size: {
         type: [Number, String],
-        default: 'basic',
+        default: 'm',
       },
       weight: {
         type: [Number, String],
@@ -35,11 +35,11 @@
       },
       width: {
         type: [Number, String],
-        default: 'auto',
+        default: null,
       },
       height: {
         type: [Number, String],
-        default: 'auto',
+        default: null,
       }
     },
     data () {
@@ -47,18 +47,33 @@
     },
     computed: {
       style () {
-        return {
-          'minWidth': typeof this.width === 'number' ? this.width + 'px' : this.width,
-          'minHeight': typeof this.height === 'number' ? this.height + 'px' : this.height,
-          'fontSize': typeof this.size === 'number' ? this.size + 'px' : this.size,
+        let style = {
+          'fontSize': this.changeUnit(this.size),
           'fontWeight': this.weight,
+        };
+
+        if (this.width) {
+          style.minWidth = this.changeUnit(this.width);
         }
+
+        if (this.height) {
+          style.minHeight = this.changeUnit(this.height);
+        }
+
+        return style;
       }
     },
     mounted () {
     },
     watch: {},
     methods: {
+      changeUnit (value) {
+        if (typeof value === 'number' || !isNaN(Number(value))) {
+          return `${value}px`;
+        } else if (typeof value === 'string') {
+          return value;
+        }
+      },
       onClick (e) {
         this.$emit('click', e);
       },

@@ -1,4 +1,5 @@
 .v-btn--color {
+	// bootstrap colors
 	&-primary {
 		background: #0069d9;
 		color: $white;
@@ -35,23 +36,21 @@
 		background: transparent;
 		color: #007bff;
 	}
-	&-dark {
-		background: $gray900;
-		color: $white;
-	}
-	&-maxwork {
+
+	// maxst colors
+	&-blue {
 		background: $blue500;
 		color: $white;
 	}
-	&-remote {
+	&-green {
 		background: $green400;
 		color: $white;
 	}
-	&-create {
+	&-orange {
 		background: $orange400;
 		color: $white;
 	}
-	&-admin {
+	&-yellow {
 		background: $yellow400;
 		color: $white;
 	}
@@ -63,9 +62,30 @@
 		background: $white;
 		color: $gray900;
 	}
+	&-black {
+		background: $gray900;
+		color: $white;
+	}
 	&-white-blue {
 		background: $white;
 		color: $blue500;
+	}
+	&-file {
+		background: linear-gradient(to bottom, $white 1%, $gray100);
+		color: $gray900;
+		box-shadow: 0 0 0 0.5px $gray400 inset;
+	}
+	&-cyan {
+		background: $cyan300;
+		color: $white;
+	}
+	&-navy {
+		background: $blue900;
+		color: $white;
+	}
+	&-lightblue {
+		background: $lightblue400;
+		color: $white;
 	}
 	&-white-border {
 		@for $i from 1 to 6 {
@@ -94,7 +114,7 @@
 			}
 		}
 	}
-	&-maxwork-border {
+	&-blue-border {
 		@for $i from 1 to 6 {
 			&-#{$i} {
 				background: $white;
@@ -103,17 +123,31 @@
 			}
 		}
 	}
-	&-file {
-		background: linear-gradient(to bottom, $white 1%, $gray100);
-		color: $gray900;
-		box-shadow: 0 0 0 0.5px $gray400 inset;
+	&-green-border {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: $white;
+				color: $green400;
+				box-shadow: 0 0 0 #{$i}px $green400 inset;
+			}
+		}
 	}
-	&-lite {
-		background: $cyan300;
-		color: $white;
+	&-orange-border {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: $white;
+				color: $orange400;
+				box-shadow: 0 0 0 #{$i}px $orange400 inset;
+			}
+		}
 	}
-	&-enterprise {
-		background: $blue900;
-		color: $white;
+	&-yellow-border {
+		@for $i from 1 to 6 {
+			&-#{$i} {
+				background: $white;
+				color: $yellow400;
+				box-shadow: 0 0 0 #{$i}px $yellow400 inset;
+			}
+		}
 	}
 }
