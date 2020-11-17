@@ -45,13 +45,13 @@ Vue.use(VueButtonAnimation);
 | button-basic | color, size, weight, width, height | It acts as the `button` tag. So it performs the basic attributes of `button` tag like `disabled`. |
 | a-basic      | color, size, weight, width, height | It acts as the `a` tag. So it performs the basic attributes of `a` tag like `href`. |
 
-<br>
+<br><br>
 
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'link', 'blue', 'green', 'orange', 'yellow', 'red', 'white', 'black', 'white-blue', 'file', 'cyan', 'navy', 'lightblue', 'white-border-{number(1\~5)}', 'white-border-blue-{number(1\~5)}', 'gray-border-{number(1\~5)}', 'blue-border-{number(1\~5)}', 'green-border-{number(1\~5)}', 'orange-border-{number(1\~5)}', 'yellow-border-{number(1\~5)}') | 'primary' |
-| size     | **String** ('ss', 's', 'm', 'l') or **Number** | 'm' |
+| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-{number(1~5)}`, `white-border-blue-{number(1~5)}`, `gray-border-{number(1~5)}`, `blue-border-{number(1~5)}`, `green-border-{number(1~5)}`, `orange-border-{number(1~5)}`, `yellow-border-{number(1~5)}`) | `primary` |
+| size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | `m` |
 | weight   | **String** or **Number** (100 ~ 800) | 800 |
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
