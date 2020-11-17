@@ -43,12 +43,12 @@ Vue.use(VueButtonAnimation);
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
 
-* color
+* **color**
     * It means the button's color theme.
     * You can set button's color to a predetermined color.
     * If you want to set button's color to another color, you can customize the class or change the style.
     * If you do not enter a color prop, the color defaults to `primary`.
-* size
+* **size**
     * It means the font size.
     * If you do not enter a unit or do enter a number, the unit defaults to `px`.
         * For Example, if you enter `size="20"` or `:size="20"`, the size is set to `20px`.
@@ -60,16 +60,16 @@ Vue.use(VueButtonAnimation);
         * `m` : 1rem
         * `l` : 1.5rem
     * If you do not enter a size prop, the size defaults to `m`.
-* weight
+* **weight**
     * It means the font weight.
     * You can set the font weight between 100 and 800, regardless of whether the type of value is string or number.
         * For example, you can enter `weight="400"` or `:weight="400"`
     * If you do not enter a weight prop, the size defaults to `800`.
-* width
+* **width**
     * It means the button's min width.
     * If you do not enter a unit or do enter a number, the unit defaults to `px`.
     * If you enter a specific unit, the width is set to that unit.
-* height
+* **height**
     * It means the button's min height.
     * If you do not enter a unit or do enter a number, the unit defaults to `px`.
     * If you enter a specific unit, the height is set to that unit.
