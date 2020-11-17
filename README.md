@@ -11,6 +11,11 @@ $ npm i vue-button-animation
 
 <br>
 
+## Demo
+[https://codesandbox.io/s/vue-button-animation-yb9tq](https://codesandbox.io/s/vue-button-animation-yb9tq?file=/src/App.vue)
+
+<br>
+
 ## Usage
 In your components template:
 ```vue
@@ -90,7 +95,7 @@ Vue.use(VueButtonAnimation);
 * **disabled**
     * If you want to set status of button to `disabled`, you can use `disabled` attribute in `button` element and `disabled` prop in `a` element.
         * Inside a `button` element : `<button-basic disabled>NAME</button-basic>`
-        * Inside a `a` element : `<a-basic :disabled="true">NAME</a-basic>`
+        * Inside a `a` element : `<a-basic :disabled="true">NAME</a-basic>` or `<a-basic disabled>NAME</a-basic>`
 
 <br><br>
 
