@@ -7,6 +7,13 @@
     display: inline-block;
     text-decoration: none;
 
+    &:disabled,
+    &.v-btn--disabled {
+        opacity: 0.3;
+        cursor: default;
+        pointer-events: none;
+    }
+
     &:focus {
         outline: none;
     }

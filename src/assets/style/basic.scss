@@ -3,85 +3,80 @@
 .v-btn--basic {
   border-radius: 4px;
 
-  &:disabled {
-    opacity: 0.3;
-    cursor: default;
-  }
-
-  &:not(:disabled):hover {
+  &:not(:disabled):not(.v-btn--disabled):hover {
     opacity: 0.8;
   }
 
   &.v-btn--color {
     &-blue {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $blue700;
         opacity: 1;
       }
     }
     &-green {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $green700;
         opacity: 1;
       }
     }
     &-orange {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $orange600;
         opacity: 1;
       }
     }
     &-yellow {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $yellow600;
         opacity: 1;
       }
     }
     &-red {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $red700;
         opacity: 1;
       }
     }
     &-white {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $gray100;
         opacity: 1;
       }
     }
     &-black {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $gray700;
         color: $white;
         opacity: 1;
       }
     }
     &-white-blue {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $gray100;
         opacity: 1;
       }
     }
     &-file {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: linear-gradient(to bottom, $gray100 1%, $gray200);
         opacity: 1;
       }
     }
     &-cyan {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $cyan600;
         opacity: 1;
       }
     }
     &-navy {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $blue800;
         opacity: 1;
       }
     }
     &-lightblue {
-      &:not(:disabled):hover {
+      &:not(:disabled):not(.v-btn--disabled):hover {
         background: $lightblue700;
         opacity: 1;
       }
@@ -89,7 +84,7 @@
     &-white-border {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: hsla(0,0%,100%,.5);
             opacity: 1;
           }
@@ -99,7 +94,7 @@
     &-white-border-blue {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: $white;
             color: $blue500;
             opacity: 1;
@@ -110,7 +105,7 @@
     &-gray-border {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: $gray100;
             opacity: 1;
           }
@@ -120,7 +115,7 @@
     &-blue-border {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: $blue500;
             color: $white;
             box-shadow: 0 0 0 3px $blue500 inset;
@@ -132,7 +127,7 @@
     &-green-border {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: $green700;
             color: $white;
             box-shadow: 0 0 0 3px $green700 inset;
@@ -144,7 +139,7 @@
     &-orange-border {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: $orange600;
             color: $white;
             box-shadow: 0 0 0 3px $orange600 inset;
@@ -156,7 +151,7 @@
     &-yellow-border {
       @for $i from 1 to 6 {
         &-#{$i} {
-          &:not(:disabled):hover {
+          &:not(:disabled):not(.v-btn--disabled):hover {
             background: $yellow600;
             color: $white;
             box-shadow: 0 0 0 3px $yellow600 inset;

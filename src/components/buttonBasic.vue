@@ -107,5 +107,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/buttonBasic.scss';
+  @import '../assets/style/basic';
 </style>

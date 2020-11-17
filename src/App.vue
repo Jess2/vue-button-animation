@@ -74,7 +74,7 @@
       <li>
         <span>button-basic (disabled)</span>
         <div>
-          <button-basic color="primary" size="ss" disabled>Primary SS</button-basic>
+          <button-basic color="primary" size="ss" disabled="true">Primary SS</button-basic>
           <button-basic color="secondary" size="ss" disabled>Secondary SS</button-basic>
           <button-basic color="success" size="ss" disabled>Success SS</button-basic>
           <button-basic color="danger" size="ss" disabled>Danger SS</button-basic>
@@ -143,8 +143,8 @@
       <li>
         <span>a-basic</span>
         <div>
-          <a-basic href="https://google.com" target="_blank" color="primary" size="ss">Primary SS</a-basic>
-          <a-basic color="secondary" size="ss">Secondary SS</a-basic>
+          <a-basic href="https://google.com" target="_blank" color="primary" size="ss" :disabled="false">Primary SS</a-basic>
+          <a-basic color="secondary" size="ss" :disabled="true">Secondary SS</a-basic>
           <a-basic color="success" size="ss">Success SS</a-basic>
           <a-basic color="danger" size="ss">Danger SS</a-basic>
           <a-basic color="warning" size="s">Warning S</a-basic>

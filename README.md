@@ -42,19 +42,20 @@ Vue.use(VueButtonAnimation);
 ## Buttons
 | Name         | Available Props | Description   |
 |--------------|-----------------|---------------|
-| button-basic | color, size, weight, width, height | It acts as the `button` tag. So it performs the basic attributes of `button` tag like `disabled`. |
-| a-basic      | color, size, weight, width, height | It acts as the `a` tag. So it performs the basic attributes of `a` tag like `href`. |
+| button-basic | color, size, weight, width, height | It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`. |
+| a-basic      | color, size, weight, width, height, disabled | It acts as the `a` element. So it performs the basic attributes of `a` element like `href`. |
 
 <br><br>
 
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-{number(1~5)}`, `white-border-blue-{number(1~5)}`, `gray-border-{number(1~5)}`, `blue-border-{number(1~5)}`, `green-border-{number(1~5)}`, `orange-border-{number(1~5)}`, `yellow-border-{number(1~5)}`) | `primary` |
-| size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | `m` |
+| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-{number(1~5)}`, `white-border-blue-{number(1~5)}`, `gray-border-{number(1~5)}`, `blue-border-{number(1~5)}`, `green-border-{number(1~5)}`, `orange-border-{number(1~5)}`, `yellow-border-{number(1~5)}`) | primary |
+| size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
 | weight   | **String** or **Number** (100 ~ 800) | 800 |
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
+| disabled | **Boolean** | false |
 
 * **color**
     * It means the button's color theme.
@@ -86,6 +87,10 @@ Vue.use(VueButtonAnimation);
     * It means the button's min height.
     * If you do not enter a unit or do enter a number, the unit defaults to `px`.
     * If you enter a specific unit, the height is set to that unit.
+* **disabled**
+    * If you want to set status of button to `disabled`, you can use `disabled` attribute in `button` element and `disabled` prop in `a` element.
+        * Inside a `button` element : `<button-basic disabled>NAME</button-basic>`
+        * Inside a `a` element : `<a-basic :disabled="true">NAME</a-basic>`
 
 <br><br>
 

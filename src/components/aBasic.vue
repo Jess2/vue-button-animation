@@ -1,17 +1,17 @@
 <template>
-  <a :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]"
-          class="v-btn v-btn--basic"
-          :style="style"
-          role="button"
-          @click="onClick"
-          @dblclick="onDblclick"
-          @mousedown="onMousedown"
-          @mouseup="onMouseup"
-          @mouseenter="onMouseenter"
-          @mouseleave="onMouseleave"
-          @mousemove="onMousemove"
-          @mouseout="onMouseout"
-          @mouseover="onMouseover">
+  <a :class="[`v-btn--color-${color}`, `v-btn--size-${size}`, {'v-btn--disabled': disabled}]"
+     class="v-btn v-btn--basic"
+     :style="style"
+     role="button"
+     @click="onClick"
+     @dblclick="onDblclick"
+     @mousedown="onMousedown"
+     @mouseup="onMouseup"
+     @mouseenter="onMouseenter"
+     @mouseleave="onMouseleave"
+     @mousemove="onMousemove"
+     @mouseout="onMouseout"
+     @mouseover="onMouseover">
       <span>
         <slot></slot>
       </span>
@@ -41,6 +41,10 @@
       height: {
         type: [Number, String],
         default: null,
+      },
+      disabled: {
+        type: Boolean,
+        default: false
       }
     },
     data () {
@@ -108,5 +112,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/buttonBasic.scss';
+  @import '../assets/style/basic.scss';
 </style>
