@@ -4,6 +4,8 @@
     cursor: pointer;
     font-family: sans-serif;
     padding: 0.5em 1em 0.51em;
+    display: inline-block;
+    text-decoration: none;
 
     &:focus {
         outline: none;

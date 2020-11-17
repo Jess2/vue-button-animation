@@ -140,6 +140,75 @@
           <button-basic color="yellow-border-5" disabled>Yellow Border 5</button-basic>
         </div>
       </li>
+      <li>
+        <span>a-basic</span>
+        <div>
+          <a-basic href="https://google.com" target="_blank" color="primary" size="ss">Primary SS</a-basic>
+          <a-basic color="secondary" size="ss">Secondary SS</a-basic>
+          <a-basic color="success" size="ss">Success SS</a-basic>
+          <a-basic color="danger" size="ss">Danger SS</a-basic>
+          <a-basic color="warning" size="s">Warning S</a-basic>
+          <a-basic color="info" size="s">Info S</a-basic>
+          <a-basic color="light" size="m">Light M</a-basic>
+          <a-basic color="link" size="m">Link M</a-basic>
+          <a-basic color="dark" size="l">Dark L</a-basic>
+          <br>
+          <a-basic href="https://google.com" target="_blank" color="blue">Blue</a-basic>
+          <a-basic color="green">Green</a-basic>
+          <a-basic color="orange">Orange</a-basic>
+          <a-basic color="yellow">Yellow</a-basic>
+          <a-basic color="red">Red</a-basic>
+          <a-basic color="white">White</a-basic>
+          <a-basic color="white-blue">White Blue</a-basic>
+          <a-basic color="file">File</a-basic>
+          <a-basic color="cyan">Cyan</a-basic>
+          <a-basic color="navy">Navy</a-basic>
+          <a-basic color="black">Black</a-basic>
+          <a-basic color="lightblue">Lightblue</a-basic>
+          <br>
+          <a-basic color="white-border-1">White Border 1</a-basic>
+          <a-basic color="white-border-2">White Border 2</a-basic>
+          <a-basic color="white-border-3">White Border 3</a-basic>
+          <a-basic color="white-border-4">White Border 4</a-basic>
+          <a-basic color="white-border-5">White Border 5</a-basic>
+          <br>
+          <a-basic color="white-border-blue-1">White Border Blue 1</a-basic>
+          <a-basic color="white-border-blue-2">White Border Blue 2</a-basic>
+          <a-basic color="white-border-blue-3">White Border Blue 3</a-basic>
+          <a-basic color="white-border-blue-4">White Border Blue 4</a-basic>
+          <a-basic color="white-border-blue-5">White Border Blue 5</a-basic>
+          <br>
+          <a-basic color="gray-border-1">Gray Border 1</a-basic>
+          <a-basic color="gray-border-2">Gray Border 2</a-basic>
+          <a-basic color="gray-border-3">Gray Border 3</a-basic>
+          <a-basic color="gray-border-4">Gray Border 4</a-basic>
+          <a-basic color="gray-border-5">Gray Border 5</a-basic>
+          <br>
+          <a-basic color="blue-border-1">Blue Border 1</a-basic>
+          <a-basic color="blue-border-2">Blue Border 2</a-basic>
+          <a-basic color="blue-border-3">Blue Border 3</a-basic>
+          <a-basic color="blue-border-4">Blue Border 4</a-basic>
+          <a-basic color="blue-border-5">Blue Border 5</a-basic>
+          <br>
+          <a-basic color="green-border-1">Green Border 1</a-basic>
+          <a-basic color="green-border-2">Green Border 2</a-basic>
+          <a-basic color="green-border-3">Green Border 3</a-basic>
+          <a-basic color="green-border-4">Green Border 4</a-basic>
+          <a-basic color="green-border-5">Green Border 5</a-basic>
+          <br>
+          <a-basic color="orange-border-1">Orange Border 1</a-basic>
+          <a-basic color="orange-border-2">Orange Border 2</a-basic>
+          <a-basic color="orange-border-3">Orange Border 3</a-basic>
+          <a-basic color="orange-border-4">Orange Border 4</a-basic>
+          <a-basic color="orange-border-5">Orange Border 5</a-basic>
+          <br>
+          <a-basic color="yellow-border-1">Yellow Border 1</a-basic>
+          <a-basic color="yellow-border-2">Yellow Border 2</a-basic>
+          <a-basic color="yellow-border-3">Yellow Border 3</a-basic>
+          <a-basic color="yellow-border-4">Yellow Border 4</a-basic>
+          <a-basic color="yellow-border-5">Yellow Border 5</a-basic>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
@@ -185,7 +254,7 @@
         > div {
           width: calc(100% - 160px);
 
-          button {
+          a, button {
             margin: 5px;
           }
         }

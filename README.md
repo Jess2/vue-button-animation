@@ -14,6 +14,7 @@ $ npm i vue-button-animation
 ## Usage
 In your components template:
 ```vue
+<!-- button-basic -->
 <button-basic>Button</button-basic>
 <button-basic @click="onClick">Button</button-basic>
 <button-basic color="primary" size="ss">Button</button-basic>
@@ -23,6 +24,10 @@ In your components template:
 <button-basic color="info" size="30">Button</button-basic>
 <button-basic color="dark" size="256">Button</button-basic>
 <button-basic color="dark" size="20em">Button</button-basic>
+
+<!-- a-basic -->
+<a-basic>Button</a-basic>
+<a-basic href="https://google.com" target="_blank" color="primary" size="ss">Button</a-basic>
 ```
 
 In your main.js file:
@@ -34,7 +39,15 @@ Vue.use(VueButtonAnimation);
 
 <br>
 
-## Available Props
+## Buttons
+| Name         | Available Props | Description   |
+|--------------|-----------------|---------------|
+| button-basic | color, size, weight, width, height | It acts as the `button` tag. So it performs the basic attributes of `button` tag like `disabled`. |
+| a-basic      | color, size, weight, width, height | It acts as the `a` tag. So it performs the basic attributes of `a` tag like `href`. |
+
+<br>
+
+## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
 | color    | **String** ('primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'link', 'blue', 'green', 'orange', 'yellow', 'red', 'white', 'black', 'white-blue', 'file', 'cyan', 'navy', 'lightblue', 'white-border-{number(1\~5)}', 'white-border-blue-{number(1\~5)}', 'gray-border-{number(1\~5)}', 'blue-border-{number(1\~5)}', 'green-border-{number(1\~5)}', 'orange-border-{number(1\~5)}', 'yellow-border-{number(1\~5)}') | 'primary' |
@@ -76,7 +89,7 @@ Vue.use(VueButtonAnimation);
 
 <br><br>
 
-## Available Events
+## Events
 | Event      | Description |
 |------------|-------------|
 | click      | The event occurs when the user clicks on an element |

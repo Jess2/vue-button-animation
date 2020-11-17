@@ -1,6 +1,6 @@
 import './assets/style/app.scss';
 import buttonBasic from './components/buttonBasic.vue';
-import buttonMaxst from './components/buttonMaxst.vue';
+import buttonMaxst from './components/aBasic.vue';
 
 const BUTTON = {
   install (Vue) {

@@ -1,6 +1,8 @@
 <template>
-  <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]"
-          class="v-btn v-btn--maxst"
+  <a :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]"
+          class="v-btn v-btn--basic"
+          :style="style"
+          role="button"
           @click="onClick"
           @dblclick="onDblclick"
           @mousedown="onMousedown"
@@ -13,30 +15,66 @@
       <span>
         <slot></slot>
       </span>
-  </button>
+  </a>
 </template>
 
 <script>
   export default {
-    name: 'button-maxst',
+    name: 'a-basic',
     props: {
       color: {
         type: String,
-        default: 'maxwork',
+        default: 'primary',
       },
       size: {
         type: [Number, String],
         default: 'm',
+      },
+      weight: {
+        type: [Number, String],
+        default: 800,
+      },
+      width: {
+        type: [Number, String],
+        default: null,
+      },
+      height: {
+        type: [Number, String],
+        default: null,
       }
     },
     data () {
       return {}
     },
-    computed: {},
+    computed: {
+      style () {
+        let style = {
+          'fontSize': this.changeUnit(this.size),
+          'fontWeight': this.weight,
+        };
+
+        if (this.width) {
+          style.minWidth = this.changeUnit(this.width);
+        }
+
+        if (this.height) {
+          style.minHeight = this.changeUnit(this.height);
+        }
+
+        return style;
+      }
+    },
     mounted () {
     },
     watch: {},
     methods: {
+      changeUnit (value) {
+        if (typeof value === 'number' || !isNaN(Number(value))) {
+          return `${value}px`;
+        } else if (typeof value === 'string') {
+          return value;
+        }
+      },
       onClick (e) {
         this.$emit('click', e);
       },
@@ -70,5 +108,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/buttonBasic';
+  @import '../assets/style/buttonBasic.scss';
 </style>
