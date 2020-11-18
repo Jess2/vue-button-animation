@@ -62,15 +62,17 @@ In your components template:
     ```
 <br>
 
-* **size** - It means the font size. If you enter a number or a string excluding unit, the unit is set to `px`.
+* **`size`** - It means the font size. If you enter a number or a string excluding unit, the unit is set to `px`.
     For Example, if you enter `size="20"` or `:size="20"`, the size is set to `20px`.  
     If you enter a specific unit, the font size is set to that unit.
     For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `10em`, `10rem`, `10px` or `10pt`.  
     If you enter a `ss`, `s`, `m` or `l`, the size is set to a predetermined size. By default, this is `m`.
+    
         * `ss` : 0.75rem
         * `s` : 0.875rem
         * `m` : 1rem
         * `l` : 1.5rem
+        
     Example:
     ```html
       <button-basic>Button</button-basic> <!-- By default, this is `m` -->
@@ -83,8 +85,9 @@ In your components template:
     ```
 <br>
 
-* **weight** - You can set the font weight between 100 and 900, regardless of whether the type of value is string or number.
+* **`weight`** - You can set the font weight between 100 and 900, regardless of whether the type of value is string or number.
     For example, you can enter `weight="400"` or `:weight="400"`. By default, this is `800`.
+    
     Example:
     ```html
       <button-basic>Button</button-basic>  <!-- By default, this is `800`. -->
@@ -93,7 +96,7 @@ In your components template:
     ```
 <br>
 
-* **width** - It means the button's min width.
+* **`width`** - It means the button's min width.
     If you enter a number or a string excluding unit, the unit is set to `px`.
     If you enter a specific unit, the width is set to that unit.
     If you do not enter any width prop, the width is automatically calculated based on the button text data length and predefined padding value(`padding: 0.5em 1em 0.51em`).
@@ -109,7 +112,7 @@ In your components template:
     ```
 <br>
 
-* **height** - It means the button's min height.
+* **`height`** - It means the button's min height.
     If you enter a number or a string excluding unit, the unit is set to `px`.
     If you enter a specific unit, the height is set to that unit.
     If you do not enter any height prop, the height is automatically calculated based on the button text data length and predefined padding value(`padding: 0.5em 1em 0.51em`).
@@ -125,7 +128,7 @@ In your components template:
     ```
 <br>
 
-* **disabled** - If you want to set status of button to `disabled`, you can use `disabled` attribute in `button` element and `disabled` prop in `a` element.
+* **`disabled`** - If you want to set status of button to `disabled`, you can use `disabled` attribute in `button` element and `disabled` prop in `a` element.
                   
     Example:
     ```html
