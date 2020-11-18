@@ -36,8 +36,8 @@ In your components template:
 ## Buttons
 | Name         | Available Props | Description   |
 |--------------|-----------------|---------------|
-| button-basic | color, size, weight, width, height | It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`. |
-| a-basic      | color, size, weight, width, height, disabled | It acts as the `a` element. So it performs the basic attributes of `a` element like `href`. |
+| button-basic | color, size, weight, width, height, loadingDot | It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`. |
+| a-basic      | color, size, weight, width, height, disabled, loadingDot | It acts as the `a` element. So it performs the basic attributes of `a` element like `href`. |
 
 <br><br>
 
@@ -50,6 +50,7 @@ In your components template:
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
 | disabled | **Boolean** | false |
+| loadingDot | **Boolean** | false |
 
 * **`color`** - You can set button's color to a predetermined color. 
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
@@ -99,7 +100,7 @@ In your components template:
 * **`width`** - It means the button's min width.
     If you enter a number or a string excluding unit, the unit is set to `px`.
     If you enter a specific unit, the width is set to that unit.
-    If you do not enter any width prop, the width is automatically calculated based on the length of button's text data and predefined padding value(`padding: 0.5em 1em 0.51em`).
+    If you do not enter any width prop, the width is automatically calculated based on the length of button's text data and predefined padding value.
     
     Example:
     ```html
@@ -112,10 +113,10 @@ In your components template:
     ```
 <br>
 
-* **`height`** - It means the button's min height.
+* **`height`** - It means the button's height.
     If you enter a number or a string excluding unit, the unit is set to `px`.
     If you enter a specific unit, the height is set to that unit.
-    If you do not enter any height prop, the height is automatically calculated based on the length of button's text data and predefined padding value(`padding: 0.5em 1em 0.51em`).
+    If you do not enter any height prop, the height is automatically calculated based on the length of button's text data and predefined padding value.
     
     Example:
     ```html
@@ -138,6 +139,19 @@ In your components template:
       <a-basic disabled>Link</a-basic>
       <a-basic :disabled="true">Link</a-basic>
       <a-basic :disabled="false">Link</a-basic>
+    ```
+<br>
+
+* **`loadingDot`** - If you want to set status of button to loading, you can use `loadingDot` prop.
+                  
+    Example:
+    ```html
+      <button-basic loadingDot>Button</button-basic>
+      <button-basic :loadingDot="true">Button</button-basic>
+      <button-basic :loadingDot="false">Button</button-basic>
+      <a-basic loadingDot>Link</a-basic>
+      <a-basic :loadingDot="true">Link</a-basic>
+      <a-basic :loadingDot="false">Link</a-basic>
     ```
 
 <br><br>

@@ -1,8 +1,6 @@
 @import 'colors.scss';
 
 .v-btn--basic {
-  border-radius: 4px;
-
   &:not(:disabled):not(.v-btn--disabled):hover {
     opacity: 0.8;
   }
