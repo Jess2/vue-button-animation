@@ -99,7 +99,7 @@ In your components template:
 * **`width`** - It means the button's min width.
     If you enter a number or a string excluding unit, the unit is set to `px`.
     If you enter a specific unit, the width is set to that unit.
-    If you do not enter any width prop, the width is automatically calculated based on the button text data length and predefined padding value(`padding: 0.5em 1em 0.51em`).
+    If you do not enter any width prop, the width is automatically calculated based on the length of button's text data and predefined padding value(`padding: 0.5em 1em 0.51em`).
     
     Example:
     ```html
@@ -115,7 +115,7 @@ In your components template:
 * **`height`** - It means the button's min height.
     If you enter a number or a string excluding unit, the unit is set to `px`.
     If you enter a specific unit, the height is set to that unit.
-    If you do not enter any height prop, the height is automatically calculated based on the button text data length and predefined padding value(`padding: 0.5em 1em 0.51em`).
+    If you do not enter any height prop, the height is automatically calculated based on the length of button's text data and predefined padding value(`padding: 0.5em 1em 0.51em`).
     
     Example:
     ```html
