@@ -1,5 +1,11 @@
 <template>
-  <button :class="[`v-btn--color-${color}`, `v-btn--size-${size}`]"
+  <button :class="[
+            `v-btn--color-${color}`,
+            `v-btn--size-${size}`,
+            {
+              'v-btn--loading-dot': loadingDot
+            }
+          ]"
           class="v-btn v-btn--basic"
           :style="style"
           @click="onClick"
@@ -11,9 +17,10 @@
           @mousemove="onMousemove"
           @mouseout="onMouseout"
           @mouseover="onMouseover">
-      <span>
-        <slot></slot>
-      </span>
+    <span class="slot-wrapper">
+      <slot></slot>
+    </span>
+    <span v-if="loadingDot" class="loader--dot"></span>
   </button>
 </template>
 
@@ -41,6 +48,10 @@
         type: [Number, String],
         default: null,
       },
+      loadingDot: {
+        type: Boolean,
+        default: false,
+      },
     },
     data () {
       return {}
@@ -57,7 +68,7 @@
         }
 
         if (this.height) {
-          style.minHeight = this.changeUnit(this.height);
+          style.height = this.changeUnit(this.height);
         }
 
         return style;

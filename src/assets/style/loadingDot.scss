@@ -1,0 +1,239 @@
+@mixin animation--dot-dark {
+  -webkit-animation: loader--dot-dark-2 3s ease-in-out infinite;
+  animation: loader--dot-dark-2 3s ease-in-out infinite;
+
+  &:before {
+    -webkit-animation: loader--dot-dark-1 3s ease-in-out infinite;
+    animation: loader--dot-dark-1 3s ease-in-out infinite;
+  }
+
+  &:after {
+    -webkit-animation: loader--dot-dark-3 3s ease-in-out infinite;
+    animation: loader--dot-dark-3 3s ease-in-out infinite;
+  }
+}
+
+.v-btn--loading-dot {
+  opacity: 0.3;
+  pointer-events: none;
+
+  .slot-wrapper {
+    opacity: 0;
+  }
+
+  .loader--dot {
+    display: block;
+    position: absolute;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 0.4em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: loader--dot-light-2 3s ease-in-out infinite;
+    animation: loader--dot-light-2 3s ease-in-out infinite;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -0.8em;
+      height: 0.4em;
+      width: 0.4em;
+      border-radius: 0.4em;
+      -webkit-animation: loader--dot-light-1 3s ease-in-out infinite;
+      animation: loader--dot-light-1 3s ease-in-out infinite;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0.8em;
+      height: 0.4em;
+      width: 0.4em;
+      border-radius: 0.4em;
+      -webkit-animation: loader--dot-light-3 3s ease-in-out infinite;
+      animation: loader--dot-light-3 3s ease-in-out infinite;
+    }
+  }
+
+  &.v-btn--color {
+    &-light,
+    &-white,
+    &-file {
+      .loader--dot {
+        @include animation--dot-dark;
+      }
+    }
+
+    &-gray-border,
+    &-blue-border,
+    &-green-border,
+    &-orange-border,
+    &-yellow-border {
+      @for $i from 1 to 6 {
+        &-#{$i} {
+          .loader--dot {
+            @include animation--dot-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &.v-btn--color {
+    &-link,
+    &-white-blue,
+    &-white-border-blue {
+      .loader--dot {
+        -webkit-animation: loader--dot-blue-2 3s ease-in-out infinite;
+        animation: loader--dot-blue-2 3s ease-in-out infinite;
+
+        &:before {
+          -webkit-animation: loader--dot-blue-1 3s ease-in-out infinite;
+          animation: loader--dot-blue-1 3s ease-in-out infinite;
+        }
+
+        &:after {
+          -webkit-animation: loader--dot-blue-3 3s ease-in-out infinite;
+          animation: loader--dot-blue-3 3s ease-in-out infinite;
+        }
+      }
+    }
+  }
+}
+// loader--dot-light
+@-webkit-keyframes loader--dot-light-1 {
+  0% {background-color: rgba(255, 255, 255, .4);}
+  25% {background-color: rgba(255, 255, 255, 1);}
+  50% {background-color: rgba(255, 255, 255, .4);}
+  75% {background-color: rgba(255, 255, 255, .4);}
+  100% {background-color: rgba(255, 255, 255, .4);}
+}
+@keyframes loader--dot-light-1 {
+  0% {background-color: rgba(255, 255, 255, .4);}
+  25% {background-color: rgba(255, 255, 255, 1);}
+  50% {background-color: rgba(255, 255, 255, .4);}
+  75% {background-color: rgba(255, 255, 255, .4);}
+  100% {background-color: rgba(255, 255, 255, .4);}
+}
+@-webkit-keyframes loader--dot-light-2 {
+  0% {background-color: rgba(255, 255, 255, .4);}
+  25% {background-color: rgba(255, 255, 255, .4);}
+  50% {background-color: rgba(255, 255, 255, 1);}
+  75% {background-color: rgba(255, 255, 255, .4);}
+  100% {background-color: rgba(255, 255, 255, .4);}
+}
+@keyframes loader--dot-light-2 {
+  0% {background-color: rgba(255, 255, 255, .4);}
+  25% {background-color: rgba(255, 255, 255, .4);}
+  50% {background-color: rgba(255, 255, 255, 1);}
+  75% {background-color: rgba(255, 255, 255, .4);}
+  100% {background-color: rgba(255, 255, 255, .4);}
+}
+
+@-webkit-keyframes loader--dot-light-3 {
+  0% {background-color: rgba(255, 255, 255, .4);}
+  25% {background-color: rgba(255, 255, 255, .4);}
+  50% {background-color: rgba(255, 255, 255, .4);}
+  75% {background-color: rgba(255, 255, 255, 1);}
+  100% {background-color: rgba(255, 255, 255, .4);}
+}
+@keyframes loader--dot-light-3 {
+  0% {background-color: rgba(255, 255, 255, .4);}
+  25% {background-color: rgba(255, 255, 255, .4);}
+  50% {background-color: rgba(255, 255, 255, .4);}
+  75% {background-color: rgba(255, 255, 255, 1);}
+  100% {background-color: rgba(255, 255, 255, .4);}
+}
+
+// loader--dot-dark
+@-webkit-keyframes loader--dot-dark-1 {
+  0% {background-color: rgba(0, 0, 0, .4);}
+  25% {background-color: rgba(0, 0, 0, 1);}
+  50% {background-color: rgba(0, 0, 0, .4);}
+  75% {background-color: rgba(0, 0, 0, .4);}
+  100% {background-color: rgba(0, 0, 0, .4);}
+}
+@keyframes loader--dot-dark-1 {
+  0% {background-color: rgba(0, 0, 0, .4);}
+  25% {background-color: rgba(0, 0, 0, 1);}
+  50% {background-color: rgba(0, 0, 0, .4);}
+  75% {background-color: rgba(0, 0, 0, .4);}
+  100% {background-color: rgba(0, 0, 0, .4);}
+}
+@-webkit-keyframes loader--dot-dark-2 {
+  0% {background-color: rgba(0, 0, 0, .4);}
+  25% {background-color: rgba(0, 0, 0, .4);}
+  50% {background-color: rgba(0, 0, 0, 1);}
+  75% {background-color: rgba(0, 0, 0, .4);}
+  100% {background-color: rgba(0, 0, 0, .4);}
+}
+@keyframes loader--dot-dark-2 {
+  0% {background-color: rgba(0, 0, 0, .4);}
+  25% {background-color: rgba(0, 0, 0, .4);}
+  50% {background-color: rgba(0, 0, 0, 1);}
+  75% {background-color: rgba(0, 0, 0, .4);}
+  100% {background-color: rgba(0, 0, 0, .4);}
+}
+
+@-webkit-keyframes loader--dot-dark-3 {
+  0% {background-color: rgba(0, 0, 0, .4);}
+  25% {background-color: rgba(0, 0, 0, .4);}
+  50% {background-color: rgba(0, 0, 0, .4);}
+  75% {background-color: rgba(0, 0, 0, 1);}
+  100% {background-color: rgba(0, 0, 0, .4);}
+}
+@keyframes loader--dot-dark-3 {
+  0% {background-color: rgba(0, 0, 0, .4);}
+  25% {background-color: rgba(0, 0, 0, .4);}
+  50% {background-color: rgba(0, 0, 0, .4);}
+  75% {background-color: rgba(0, 0, 0, 1);}
+  100% {background-color: rgba(0, 0, 0, .4);}
+}
+
+// loader--dot-blue
+@-webkit-keyframes loader--dot-blue-1 {
+  0% {background-color: rgba(0, 143, 253, .4);}
+  25% {background-color: rgba(0, 143, 253, 1);}
+  50% {background-color: rgba(0, 143, 253, .4);}
+  75% {background-color: rgba(0, 143, 253, .4);}
+  100% {background-color: rgba(0, 143, 253, .4);}
+}
+@keyframes loader--dot-blue-1 {
+  0% {background-color: rgba(0, 143, 253, .4);}
+  25% {background-color: rgba(0, 143, 253, 1);}
+  50% {background-color: rgba(0, 143, 253, .4);}
+  75% {background-color: rgba(0, 143, 253, .4);}
+  100% {background-color: rgba(0, 143, 253, .4);}
+}
+@-webkit-keyframes loader--dot-blue-2 {
+  0% {background-color: rgba(0, 143, 253, .4);}
+  25% {background-color: rgba(0, 143, 253, .4);}
+  50% {background-color: rgba(0, 143, 253, 1);}
+  75% {background-color: rgba(0, 143, 253, .4);}
+  100% {background-color: rgba(0, 143, 253, .4);}
+}
+@keyframes loader--dot-blue-2 {
+  0% {background-color: rgba(0, 143, 253, .4);}
+  25% {background-color: rgba(0, 143, 253, .4);}
+  50% {background-color: rgba(0, 143, 253, 1);}
+  75% {background-color: rgba(0, 143, 253, .4);}
+  100% {background-color: rgba(0, 143, 253, .4);}
+}
+
+@-webkit-keyframes loader--dot-blue-3 {
+  0% {background-color: rgba(0, 143, 253, .4);}
+  25% {background-color: rgba(0, 143, 253, .4);}
+  50% {background-color: rgba(0, 143, 253, .4);}
+  75% {background-color: rgba(0, 143, 253, 1);}
+  100% {background-color: rgba(0, 143, 253, .4);}
+}
+@keyframes loader--dot-blue-3 {
+  0% {background-color: rgba(0, 143, 253, .4);}
+  25% {background-color: rgba(0, 143, 253, .4);}
+  50% {background-color: rgba(0, 143, 253, .4);}
+  75% {background-color: rgba(0, 143, 253, 1);}
+  100% {background-color: rgba(0, 143, 253, .4);}
+}
