@@ -40,7 +40,7 @@
       height: {
         type: [Number, String],
         default: null,
-      }
+      },
     },
     data () {
       return {}

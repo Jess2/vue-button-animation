@@ -1,5 +1,5 @@
-# vue-button-animation
-Animated Buttons for Vue.js
+# Vue Button Animation Components
+This library is collection of Vue single-file components to render animated buttons.
 
 <br>
 
@@ -17,29 +17,18 @@ $ npm i vue-button-animation
 <br>
 
 ## Usage
-In your components template:
-```vue
-<!-- button-basic -->
-<button-basic>Button</button-basic>
-<button-basic @click="onClick">Button</button-basic>
-<button-basic color="primary" size="ss">Button</button-basic>
-<button-basic color="secondary" size="s">Button</button-basic>
-<button-basic color="success" size="m">Button</button-basic>
-<button-basic color="danger" size="l">Button</button-basic>
-<button-basic color="info" size="30">Button</button-basic>
-<button-basic color="dark" size="256">Button</button-basic>
-<button-basic color="dark" size="20em">Button</button-basic>
-
-<!-- a-basic -->
-<a-basic>Button</a-basic>
-<a-basic href="https://google.com" target="_blank" color="primary" size="ss">Button</a-basic>
-```
-
 In your main.js file:
 ```js
 import VueButtonAnimation from 'vue-button-animation'
 
 Vue.use(VueButtonAnimation);
+```
+<br>
+
+In your components template:
+```vue
+<button-basic>Button</button-basic>
+<a-basic>Button</a-basic>
 ```
 
 <br>
@@ -57,45 +46,96 @@ Vue.use(VueButtonAnimation);
 |----------|--------------|---------------|
 | color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-{number(1~5)}`, `white-border-blue-{number(1~5)}`, `gray-border-{number(1~5)}`, `blue-border-{number(1~5)}`, `green-border-{number(1~5)}`, `orange-border-{number(1~5)}`, `yellow-border-{number(1~5)}`) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
-| weight   | **String** or **Number** (100 ~ 800) | 800 |
+| weight   | **String** or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
 | disabled | **Boolean** | false |
 
-* **color**
-    * It means the button's color theme.
-    * You can set button's color to a predetermined color.
-    * If you want to set button's color to another color, you can customize the class or change the style.
-    * If you do not enter a color prop, the color defaults to `primary`.
-* **size**
-    * It means the font size.
-    * If you do not enter a unit or do enter a number, the unit defaults to `px`.
-        * For Example, if you enter `size="20"` or `:size="20"`, the size is set to `20px`.
-    * If you enter a specific unit, the size is set to that unit.
-        * For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`.
-    * If you enter a `ss`, `s`, `m` or `l`, the size is set to a predetermined size.
+* **`color`** - You can set button's color to a predetermined color. 
+    And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
+
+    Example:
+    ```html
+      <button-basic>Button</button-basic>  <!-- By default, this is `primary`. -->
+      <button-basic color="secondary">Button</button-basic>
+      <button-basic color="white-border-3">Button</button-basic>
+    ```
+<br>
+
+* **size** - It means the font size. If you enter a number or a string excluding unit, the unit is set to `px`.
+    For Example, if you enter `size="20"` or `:size="20"`, the size is set to `20px`.  
+    If you enter a specific unit, the font size is set to that unit.
+    For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `10em`, `10rem`, `10px` or `10pt`.  
+    If you enter a `ss`, `s`, `m` or `l`, the size is set to a predetermined size. By default, this is `m`.
         * `ss` : 0.75rem
         * `s` : 0.875rem
         * `m` : 1rem
         * `l` : 1.5rem
-    * If you do not enter a size prop, the size defaults to `m`.
-* **weight**
-    * It means the font weight.
-    * You can set the font weight between 100 and 800, regardless of whether the type of value is string or number.
-        * For example, you can enter `weight="400"` or `:weight="400"`
-    * If you do not enter a weight prop, the size defaults to `800`.
-* **width**
-    * It means the button's min width.
-    * If you do not enter a unit or do enter a number, the unit defaults to `px`.
-    * If you enter a specific unit, the width is set to that unit.
-* **height**
-    * It means the button's min height.
-    * If you do not enter a unit or do enter a number, the unit defaults to `px`.
-    * If you enter a specific unit, the height is set to that unit.
-* **disabled**
-    * If you want to set status of button to `disabled`, you can use `disabled` attribute in `button` element and `disabled` prop in `a` element.
-        * Inside a `button` element : `<button-basic disabled>NAME</button-basic>`
-        * Inside a `a` element : `<a-basic :disabled="true">NAME</a-basic>` or `<a-basic disabled>NAME</a-basic>`
+    Example:
+    ```html
+      <button-basic>Button</button-basic> <!-- By default, this is `m` -->
+      <button-basic size="20">Button</button-basic> <!-- 20px -->
+      <button-basic :size="20">Button</button-basic> <!-- 20px -->
+      <button-basic size="20px">Button</button-basic> <!-- 20px -->
+      <button-basic size="2em">Button</button-basic> <!-- 2em -->
+      <button-basic size="1rem">Button</button-basic> <!-- 1rem -->
+      <button-basic size="s">Button</button-basic> <!-- 0.875rem -->
+    ```
+<br>
+
+* **weight** - You can set the font weight between 100 and 900, regardless of whether the type of value is string or number.
+    For example, you can enter `weight="400"` or `:weight="400"`. By default, this is `800`.
+    Example:
+    ```html
+      <button-basic>Button</button-basic>  <!-- By default, this is `800`. -->
+      <button-basic weight="400">Button</button-basic>
+      <button-basic :weight="400">Button</button-basic>
+    ```
+<br>
+
+* **width** - It means the button's min width.
+    If you enter a number or a string excluding unit, the unit is set to `px`.
+    If you enter a specific unit, the width is set to that unit.
+    If you do not enter any width prop, the width is automatically calculated based on the button text data length and predefined padding value(`padding: 0.5em 1em 0.51em`).
+    
+    Example:
+    ```html
+      <button-basic>Button</button-basic> <!-- The width is automatically calculated -->
+      <button-basic width="150">Button</button-basic> <!-- 150px -->
+      <button-basic :width="150">Button</button-basic> <!-- 150px -->
+      <button-basic width="150px">Button</button-basic> <!-- 150px -->
+      <button-basic width="20em">Button</button-basic> <!-- 20em -->
+      <button-basic width="30rem">Button</button-basic> <!-- 30rem -->
+    ```
+<br>
+
+* **height** - It means the button's min height.
+    If you enter a number or a string excluding unit, the unit is set to `px`.
+    If you enter a specific unit, the height is set to that unit.
+    If you do not enter any height prop, the height is automatically calculated based on the button text data length and predefined padding value(`padding: 0.5em 1em 0.51em`).
+    
+    Example:
+    ```html
+      <button-basic>Button</button-basic> <!-- The height is automatically calculated -->
+      <button-basic height="40">Button</button-basic> <!-- 40px -->
+      <button-basic :height="40">Button</button-basic> <!-- 40px -->
+      <button-basic height="40px">Button</button-basic> <!-- 40px -->
+      <button-basic height="3em">Button</button-basic> <!-- 3em -->
+      <button-basic height="4rem">Button</button-basic> <!-- 4rem -->
+    ```
+<br>
+
+* **disabled** - If you want to set status of button to `disabled`, you can use `disabled` attribute in `button` element and `disabled` prop in `a` element.
+                  
+    Example:
+    ```html
+      <button-basic disabled>Button</button-basic>
+      <button-basic :disabled="true">Button</button-basic>
+      <button-basic :disabled="false">Button</button-basic>
+      <a-basic disabled>Link</a-basic>
+      <a-basic :disabled="true">Link</a-basic>
+      <a-basic :disabled="false">Link</a-basic>
+    ```
 
 <br><br>
 
