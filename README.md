@@ -68,11 +68,10 @@ In your components template:
     If you enter a specific unit, the font size is set to that unit.
     For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `10em`, `10rem`, `10px` or `10pt`.  
     If you enter a `ss`, `s`, `m` or `l`, the size is set to a predetermined size. By default, this is `m`.
-    
-        * `ss` : 0.75rem
-        * `s` : 0.875rem
-        * `m` : 1rem
-        * `l` : 1.5rem
+    * `ss` : 0.75rem
+    * `s` : 0.875rem
+    * `m` : 1rem
+    * `l` : 1.5rem
         
     Example:
     ```html
