@@ -12,7 +12,7 @@
     box-sizing: border-box;
 
     &:disabled,
-    &.v-btn--disabled {
+    &.disabled {
         opacity: 0.3;
         cursor: default;
         pointer-events: none;

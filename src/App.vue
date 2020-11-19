@@ -13,17 +13,22 @@
           <a-press href="https://google.com" color="info" size="30">Button</a-press>
           <a-press href="https://google.com" color="dark">Button</a-press>
           <br>
-          <button-press color="blue">Button</button-press>
-          <button-press color="green">Button</button-press>
+          <button-press>Button</button-press>
+          <button-press color="light">Button</button-press>
           <button-press color="orange">Button</button-press>
-          <button-press color="yellow">Button</button-press>
+          <button-basic color="white-border-blue-1">Button</button-basic>
+          <button-press color="white-border-blue-1">Button</button-press>
           <button-press color="red">Button</button-press>
           <button-press color="black">Button</button-press>
           <button-press color="cyan" width="100" height="100">Button</button-press>
           <button-press color="cyan" width="100" height="100" loadingDot>Button</button-press>
-          <button-press color="navy" width="10em">Button</button-press>
-          <button-press color="lightblue" weight="300" size="2em">This is Button</button-press>
-          <button-press color="lightblue" weight="300" size="2em" loadingDot>This is Button</button-press>
+          <button-press color="navy" width="10em">Welcome</button-press>
+          <button-press color="yellow-border-3" width="10em">Welcome</button-press>
+          <button-press color="lightblue" size="2em">This is Button</button-press>
+          <button-press color="lightblue" size="2em" loadingDot>This is Button</button-press>
+          <a-basic color="lightblue" size="2em" loadingDot>This is Button</a-basic>
+          <a-basic color="lightblue" size="2em">This is Button</a-basic>
+          <a-basic color="blue" size="2em">This is Button</a-basic>
         </div>
       </li>
     </ul>
@@ -55,6 +60,7 @@
   html {
     height: 100vh;
     font-family: sans-serif;
+    background: #dcdcdc;
   }
 
   #app {

@@ -1,7 +1,9 @@
-.v-btn--weight {
+.v-btn {
+  &.weight {
     @for $i from 1 to 10 {
-        &-#{$i * 100} {
-            font-weight: #{$i * 100};
-        }
+      &-#{$i * 100} {
+        font-weight: #{$i * 100};
+      }
     }
+  }
 }

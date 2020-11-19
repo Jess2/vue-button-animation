@@ -13,102 +13,98 @@
   }
 }
 
-.v-btn--loading-dot {
-  opacity: 0.3;
-  pointer-events: none;
+.v-btn {
+  &.loading-dot {
+    opacity: 0.3;
+    pointer-events: none;
 
-  .slot-wrapper {
-    opacity: 0;
-  }
-
-  .loader--dot {
-    display: block;
-    position: absolute;
-    width: 0.4em;
-    height: 0.4em;
-    border-radius: 0.4em;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-animation: loader--dot-light-2 3s ease-in-out infinite;
-    animation: loader--dot-light-2 3s ease-in-out infinite;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -0.8em;
-      height: 0.4em;
-      width: 0.4em;
-      border-radius: 0.4em;
-      -webkit-animation: loader--dot-light-1 3s ease-in-out infinite;
-      animation: loader--dot-light-1 3s ease-in-out infinite;
+    .slot-wrapper {
+      opacity: 0;
     }
 
-    &:after {
-      content: "";
+    .loader--dot {
+      display: block;
       position: absolute;
-      top: 0;
-      left: 0.8em;
-      height: 0.4em;
       width: 0.4em;
+      height: 0.4em;
       border-radius: 0.4em;
-      -webkit-animation: loader--dot-light-3 3s ease-in-out infinite;
-      animation: loader--dot-light-3 3s ease-in-out infinite;
-    }
-  }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-animation: loader--dot-light-2 3s ease-in-out infinite;
+      animation: loader--dot-light-2 3s ease-in-out infinite;
 
-  &.v-btn--color {
-    &-light,
-    &-white,
-    &-file {
-      .loader--dot {
-        @include animation--dot-dark;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -0.8em;
+        height: 0.4em;
+        width: 0.4em;
+        border-radius: 0.4em;
+        -webkit-animation: loader--dot-light-1 3s ease-in-out infinite;
+        animation: loader--dot-light-1 3s ease-in-out infinite;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0.8em;
+        height: 0.4em;
+        width: 0.4em;
+        border-radius: 0.4em;
+        -webkit-animation: loader--dot-light-3 3s ease-in-out infinite;
+        animation: loader--dot-light-3 3s ease-in-out infinite;
       }
     }
 
-    &-gray-border,
-    &-blue-border,
-    &-green-border,
-    &-orange-border,
-    &-yellow-border {
-      @for $i from 1 to 6 {
-        &-#{$i} {
-          .loader--dot {
-            @include animation--dot-dark;
+    &.color {
+      &-light,
+      &-white,
+      &-file {
+        .loader--dot {
+          @include animation--dot-dark;
+        }
+      }
+
+      &-gray-border,
+      &-blue-border,
+      &-green-border,
+      &-orange-border,
+      &-yellow-border {
+        @for $i from 1 to 6 {
+          &-#{$i} {
+            .loader--dot {
+              @include animation--dot-dark;
+            }
+          }
+        }
+      }
+    }
+
+    &.color {
+      &-white-blue,
+      &-white-border-blue {
+        .loader--dot {
+          -webkit-animation: loader--dot-blue-2 3s ease-in-out infinite;
+          animation: loader--dot-blue-2 3s ease-in-out infinite;
+
+          &:before {
+            -webkit-animation: loader--dot-blue-1 3s ease-in-out infinite;
+            animation: loader--dot-blue-1 3s ease-in-out infinite;
+          }
+
+          &:after {
+            -webkit-animation: loader--dot-blue-3 3s ease-in-out infinite;
+            animation: loader--dot-blue-3 3s ease-in-out infinite;
           }
         }
       }
     }
   }
-
-  &.v-btn--color {
-    &-link,
-    &-white-blue,
-    &-white-border-blue {
-      .loader--dot {
-        -webkit-animation: loader--dot-blue-2 3s ease-in-out infinite;
-        animation: loader--dot-blue-2 3s ease-in-out infinite;
-
-        &:before {
-          -webkit-animation: loader--dot-blue-1 3s ease-in-out infinite;
-          animation: loader--dot-blue-1 3s ease-in-out infinite;
-        }
-
-        &:after {
-          -webkit-animation: loader--dot-blue-3 3s ease-in-out infinite;
-          animation: loader--dot-blue-3 3s ease-in-out infinite;
-        }
-      }
-    }
-  }
-
-  &.v-btn--press {
-    .loader--dot {
-      @include animation--dot-dark;
-    }
-  }
 }
+
 // loader--dot-light
 @-webkit-keyframes loader--dot-light-1 {
   0% {background-color: rgba(255, 255, 255, .4);}

@@ -1,13 +1,13 @@
 <template>
   <a :class="[
-      `v-btn--color-${color}`,
-      `v-btn--size-${size}`,
+      `color-${color}`,
+      `size-${size}`,
       {
-        'v-btn--disabled': disabled,
-        'v-btn--loading-dot': loadingDot
+        'disabled': disabled,
+        'loading-dot': loadingDot
       }
      ]"
-     class="v-btn v-btn--basic"
+     class="v-btn basic"
      :style="style"
      role="button"
      @click="onClick"

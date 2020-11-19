@@ -1,14 +1,19 @@
-.v-btn--size {
+.v-btn {
+  &.size {
     &-ss {
-        font-size: 0.75rem;
+      font-size: 0.75rem;
     }
+
     &-s {
-        font-size: 0.875rem;
+      font-size: 0.875rem;
     }
+
     &-m {
-        font-size: 1rem;
+      font-size: 1rem;
     }
+
     &-l {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
+  }
 }
