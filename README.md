@@ -33,11 +33,16 @@ In your components template:
 
 <br>
 
-## Buttons
-| Name         | Available Props | Description   |
-|--------------|-----------------|---------------|
-| button-basic | color, size, weight, width, height, loadingDot | It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`. |
-| a-basic      | color, size, weight, width, height, disabled, loadingDot | It acts as the `a` element. So it performs the basic attributes of `a` element like `href`. |
+## Components
+| Name           | Available Props                                                          |
+|----------------|--------------------------------------------------------------------------|
+| button-basic   | color, size, weight, width, height, loadingDot                           |
+| a-basic        | color, size, weight, width, height, disabled, loadingDot                 |
+| button-press   | color, size, weight, width, height, loadingDot                           |
+| a-press        | color, size, weight, width, height, disabled, loadingDot                 |
+
+* **`button-{type}`** - It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`.
+* **`a-{type}`** - It acts as the `a` element. So it performs the basic attributes of `a` element like `href`.
 
 <br><br>
 
