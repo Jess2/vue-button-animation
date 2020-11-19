@@ -1,24 +1,23 @@
 <template>
   <a :class="[
-      `v-btn--color-${color}`,
-      `v-btn--size-${size}`,
-      {
-        'v-btn--disabled': disabled,
-        'v-btn--loading-dot': loadingDot
-      }
-     ]"
-     class="v-btn v-btn--basic"
-     :style="style"
-     role="button"
-     @click="onClick"
-     @dblclick="onDblclick"
-     @mousedown="onMousedown"
-     @mouseup="onMouseup"
-     @mouseenter="onMouseenter"
-     @mouseleave="onMouseleave"
-     @mousemove="onMousemove"
-     @mouseout="onMouseout"
-     @mouseover="onMouseover">
+            `v-btn--color-${color}`,
+            `v-btn--size-${size}`,
+            {
+              'v-btn--disabled': disabled,
+              'v-btn--loading-dot': loadingDot,
+            }
+          ]"
+          class="v-btn v-btn--press"
+          :style="style"
+          @click="onClick"
+          @dblclick="onDblclick"
+          @mousedown="onMousedown"
+          @mouseup="onMouseup"
+          @mouseenter="onMouseenter"
+          @mouseleave="onMouseleave"
+          @mousemove="onMousemove"
+          @mouseout="onMouseout"
+          @mouseover="onMouseover">
     <span class="slot-wrapper">
       <slot></slot>
     </span>
@@ -28,7 +27,7 @@
 
 <script>
   export default {
-    name: 'a-basic',
+    name: 'a-press',
     props: {
       color: {
         type: String,
@@ -124,5 +123,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/buttonBasic.scss';
+  @import '../assets/style/buttonPress';
 </style>

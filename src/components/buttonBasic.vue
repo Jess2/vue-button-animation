@@ -118,5 +118,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/basic';
+  @import '../assets/style/buttonBasic.scss';
 </style>

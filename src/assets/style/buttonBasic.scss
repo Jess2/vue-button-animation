@@ -1,6 +1,9 @@
 @import 'colors.scss';
 
 .v-btn--basic {
+  padding: 0.5em 1em 0.51em;
+  transition: all .1s ease-in-out;
+
   &:not(:disabled):not(.v-btn--disabled):hover {
     opacity: 0.8;
   }

@@ -44,7 +44,7 @@ In your components template:
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-[1~5]`, `white-border-blue-[1~5]`, `gray-border-[1~5]}`, `blue-border-[1~5]}`, `green-border-[1~5]}`, `orange-border-[1~5]}`, `yellow-border-[1~5]}`) | primary |
+| color    | **String** ([Predetermined Colors](#predetermined-colors)) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
 | weight   | **String** or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
@@ -52,7 +52,7 @@ In your components template:
 | disabled | **Boolean** | false |
 | loadingDot | **Boolean** | false |
 
-* **`color`** - You can set button's color to a predetermined color. 
+* **`color`** - You can set button's color to a [predetermined color](#predetermined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
 
     Example:
@@ -155,6 +155,21 @@ In your components template:
 
 <br><br>
 
+## Predetermined Colors
+
+* **`button-basic`**, **`a-basic`**
+    * primary, secondary, success, danger, warning, info, light, dark, link,
+    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue
+    * white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]
+
+<br>
+
+* **`button-press`**, **`a-press`**
+    * primary, secondary, success, danger, warning, info, ~~light,~~ dark, ~~link,~~ blue, green, orange, yellow, red, ~~white,~~ black, ~~white-blue,~~ ~~file,~~ cyan, navy, lightblue
+    * ~~white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]~~
+
+<br>
+
 ## Events
 | Event      | Description |
 |------------|-------------|
@@ -171,7 +186,7 @@ In your components template:
 <br><br>
 
 ## Tips
-* If you want to render a button containing some icons, I recommend you to use the [vue-material-design-icon](https://www.npmjs.com/package/vue-material-design-icons) library.
+* **Containing Icon** - If you want to render a button containing some icons, I recommend you to use the [vue-material-design-icon](https://www.npmjs.com/package/vue-material-design-icons) library.
     the color of icon inside a button inherit the button's color even when button's status is `hover`.
      
     Example:

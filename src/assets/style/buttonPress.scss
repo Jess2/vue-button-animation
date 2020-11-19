@@ -1,0 +1,170 @@
+@import 'colors.scss';
+
+.v-btn--press {
+  padding: 0;
+  background: transparent;
+  border-radius: 10px;
+  transition: all .1s ease-in-out;
+  box-shadow: 0 3px rgba(128, 128, 128, 1),
+  0 4px rgba(118, 118, 118, 1),
+  0 5px rgba(108, 108, 108, 1),
+  0 6px rgba(98, 98, 98, 1),
+  0 7px rgba(88, 88, 88, 1),
+  0 8px rgba(78, 78, 78, 1),
+  0 14px 6px -1px rgba(128, 128, 128, 1);
+
+  &:active {
+    box-shadow: 0 3px rgba(128, 128, 128, 1),
+    0 4px rgba(118, 118, 118, 1),
+    0 5px rgba(108, 108, 108, 1),
+    0 6px rgba(98, 98, 98, 1),
+    0 7px rgba(88, 88, 88, 1),
+    0 8px rgba(78, 78, 78, 1),
+    0 10px 2px 0 rgba(128, 128, 128, .6);
+
+    .slot-wrapper {
+      transform: translate(0, 5px);
+    }
+  }
+
+  .slot-wrapper {
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+    padding: 0.3em 1em 0.31em;
+    color: #3A474D;
+    text-shadow: 0 0.05em $white, 0 -0.05em $gray500;
+    box-shadow: inset 0 0 0.3em 0 rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+  }
+
+  &.v-btn--color {
+    &-primary {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #0069d9;
+        }
+      }
+    }
+
+    &-secondary {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #6c757d;
+        }
+      }
+    }
+
+    &-success {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #28a745;
+        }
+      }
+    }
+
+    &-danger {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #c82333;
+        }
+      }
+    }
+
+    &-warning {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #ffc107;
+        }
+      }
+    }
+
+    &-info {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #17a2b8;
+        }
+      }
+    }
+
+    &-dark {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: #343a40;
+        }
+      }
+    }
+
+    &-blue {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $blue500;
+        }
+      }
+    }
+
+    &-green {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $green400;
+        }
+      }
+    }
+
+    &-orange {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $orange400;
+        }
+      }
+    }
+
+    &-yellow {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $yellow400;
+        }
+      }
+    }
+
+    &-red {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $red400;
+        }
+      }
+    }
+
+    &-black {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $gray900;
+        }
+      }
+    }
+
+    &-cyan {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $cyan300;
+        }
+      }
+    }
+
+    &-navy {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $blue900;
+        }
+      }
+    }
+
+    &-lightblue {
+      &:not(:disabled):not(.v-btn--disabled) {
+        .slot-wrapper:hover {
+          color: $lightblue400;
+        }
+      }
+    }
+  }
+}
