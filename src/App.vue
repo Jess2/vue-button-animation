@@ -53,7 +53,6 @@
 
 <style lang="scss">
   html {
-    background: #e8e8e8;
     height: 100vh;
     font-family: sans-serif;
   }
