@@ -102,6 +102,12 @@
       }
     }
   }
+
+  &.v-btn--press {
+    .loader--dot {
+      @include animation--dot-dark;
+    }
+  }
 }
 // loader--dot-light
 @-webkit-keyframes loader--dot-light-1 {

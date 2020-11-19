@@ -33,18 +33,23 @@ In your components template:
 
 <br>
 
-## Buttons
-| Name         | Available Props | Description   |
-|--------------|-----------------|---------------|
-| button-basic | color, size, weight, width, height, loadingDot | It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`. |
-| a-basic      | color, size, weight, width, height, disabled, loadingDot | It acts as the `a` element. So it performs the basic attributes of `a` element like `href`. |
+## Components
+| Name           | Available Props                                                          |
+|----------------|--------------------------------------------------------------------------|
+| button-basic   | color, size, weight, width, height, loadingDot                           |
+| a-basic        | color, size, weight, width, height, disabled, loadingDot                 |
+| button-press   | color, size, weight, width, height, loadingDot                           |
+| a-press        | color, size, weight, width, height, disabled, loadingDot                 |
+
+* **`button-{type}`** - It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`.
+* **`a-{type}`** - It acts as the `a` element. So it performs the basic attributes of `a` element like `href`.
 
 <br><br>
 
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-[1~5]`, `white-border-blue-[1~5]`, `gray-border-[1~5]}`, `blue-border-[1~5]}`, `green-border-[1~5]}`, `orange-border-[1~5]}`, `yellow-border-[1~5]}`) | primary |
+| color    | **String** ([Predetermined Colors](#predetermined-colors)) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
 | weight   | **String** or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
@@ -52,7 +57,7 @@ In your components template:
 | disabled | **Boolean** | false |
 | loadingDot | **Boolean** | false |
 
-* **`color`** - You can set button's color to a predetermined color. 
+* **`color`** - You can set button's color to a [predetermined color](#predetermined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
 
     Example:
@@ -155,6 +160,21 @@ In your components template:
 
 <br><br>
 
+## Predetermined Colors
+
+* **`button-basic`**, **`a-basic`**
+    * primary, secondary, success, danger, warning, info, light, dark, link,
+    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue
+    * white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]
+
+<br>
+
+* **`button-press`**, **`a-press`**
+    * primary, secondary, success, danger, warning, info, ~~light,~~ dark, ~~link,~~ blue, green, orange, yellow, red, ~~white,~~ black, ~~white-blue,~~ ~~file,~~ cyan, navy, lightblue
+    * ~~white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]~~
+
+<br>
+
 ## Events
 | Event      | Description |
 |------------|-------------|
@@ -167,6 +187,25 @@ In your components template:
 | mouseout   | The event occurs when a user moves the mouse pointer out of an element, or out of one of its children |
 | mouseover  | The event occurs when the pointer is moved onto an element, or onto one of its children |
 | mouseup    | The event occurs when a user releases a mouse button over an element |
+
+<br><br>
+
+## Tips
+* **Containing Icon** - If you want to render a button containing some icons, I recommend you to use the [vue-material-design-icon](https://www.npmjs.com/package/vue-material-design-icons) library.
+    the color of icon inside a button inherit the button's color even when button's status is `hover`.
+     
+    Example:
+    ```html
+      <button-basic color="yellow-border-1">
+        <menu-icon />
+        Button
+      </button-basic>
+  
+      <a-basic>
+        Button
+        <arrow-icon />
+      </a-basic>
+    ```
 
 <br><br>
 

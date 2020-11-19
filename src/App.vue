@@ -3,58 +3,27 @@
     <h1>vue-button-animation</h1>
     <ul>
       <li>
-        <span>button-basic</span>
+        <span>Examples</span>
         <div>
-          <button-basic width="120" height="60" :loadingDot="false" @click="onClick">Login</button-basic>
-          <button-basic width="120" height="60" :loadingDot="false" @click="onClick">This is Login Button</button-basic>
-          <button-basic width="120" height="60" :loadingDot="true" @click="onClick">Login</button-basic>
-          <button-basic width="120" :loadingDot="isLoading" @click="onClick">Login</button-basic>
-          <button-basic size="l" :loadingDot="isLoading" @click="onClick">Login</button-basic>
-          <button-basic size="s" :loadingDot="isLoading" @click="onClick">Login</button-basic>
-          <button-basic size="10" :loadingDot="isLoading" @click="onClick">Login</button-basic>
-          <button-basic size="10" loadingDot @click="onClick">Login</button-basic>
-        </div>
-      </li>
-      <li>
-        <span>a-basic</span>
-        <div>
-          <a-basic width="120" height="60" :loadingDot="false" @click="onClick">Login</a-basic>
-          <a-basic width="120" height="60" :loadingDot="false" @click="onClick">This is Login Button</a-basic>
-          <a-basic width="120" height="60" :loadingDot="true" @click="onClick">This is Login Button</a-basic>
-          <a-basic width="120" :loadingDot="isLoading" @click="onClick">Login</a-basic>
-          <a-basic size="l" :loadingDot="isLoading" @click="onClick">Login</a-basic>
-          <a-basic size="l" width="10" :loadingDot="isLoading" @click="onClick">Login</a-basic>
-          <a-basic size="s" :loadingDot="isLoading" @click="onClick">Login</a-basic>
-          <a-basic size="10" :loadingDot="isLoading" @click="onClick">Login</a-basic>
-          <a-basic size="10" loadingDot @click="onClick">Login</a-basic>
-        </div>
-      </li>
-      <li>
-        <span>icon</span>
-        <div>
-          <button-basic color="orange" size="l">
-            버튼
-          </button-basic>
-          <button-basic color="orange-border-1" size="s">
-            버튼
-          </button-basic>
-          <button-basic color="light" size="s">
-            버튼
-          </button-basic>
-          <button-basic size="s">
-            버튼
-          </button-basic>
-          <button-basic size="s">
-            버튼
-            <img src="../src/assets/images/accessibility-black-18dp.svg" alt="Image">
-          </button-basic>
-          <button-basic size="s">
-            <img src="../src/assets/images/baseline_all_out_black_18dp.png" alt="Image">
-            버튼
-          </button-basic>
-          <button-basic size="s">
-            버튼
-          </button-basic>
+          <a-press href="https://google.com" color="secondary" size="s" loadingDot>Button</a-press>
+          <a-press href="https://google.com" color="success">Button</a-press>
+          <a-press href="https://google.com" color="danger" size="l">Button</a-press>
+          <a-press href="https://google.com" color="warning" size="30">Button</a-press>
+          <a-press href="https://google.com" color="info" size="30" disabled>Button</a-press>
+          <a-press href="https://google.com" color="info" size="30">Button</a-press>
+          <a-press href="https://google.com" color="dark">Button</a-press>
+          <br>
+          <button-press color="blue">Button</button-press>
+          <button-press color="green">Button</button-press>
+          <button-press color="orange">Button</button-press>
+          <button-press color="yellow">Button</button-press>
+          <button-press color="red">Button</button-press>
+          <button-press color="black">Button</button-press>
+          <button-press color="cyan" width="100" height="100">Button</button-press>
+          <button-press color="cyan" width="100" height="100" loadingDot>Button</button-press>
+          <button-press color="navy" width="10em">Button</button-press>
+          <button-press color="lightblue" weight="300" size="2em">This is Button</button-press>
+          <button-press color="lightblue" weight="300" size="2em" loadingDot>This is Button</button-press>
         </div>
       </li>
     </ul>
@@ -114,7 +83,7 @@
           width: calc(100% - 160px);
 
           a, button {
-            margin: 5px;
+            margin: 10px;
           }
         }
       }
