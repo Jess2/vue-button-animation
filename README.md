@@ -170,6 +170,25 @@ In your components template:
 
 <br><br>
 
+## Tips
+* If you want to render a button containing some icons, I recommend you to use the [vue-material-design-icon](https://www.npmjs.com/package/vue-material-design-icons) library.
+    the color of icon inside a button inherit the button's color even when button's status is `hover`.
+     
+    Example:
+    ```html
+      <button-basic color="yellow-border-1">
+        <menu-icon />
+        Button
+      </button-basic>
+  
+      <a-basic>
+        Button
+        <arrow-icon />
+      </a-basic>
+    ```
+
+<br><br>
+
 ## License
 [MIT](https://opensource.org/licenses/MIT)
 
