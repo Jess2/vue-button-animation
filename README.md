@@ -44,7 +44,7 @@ In your components template:
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-{number(1~5)}`, `white-border-blue-{number(1~5)}`, `gray-border-{number(1~5)}`, `blue-border-{number(1~5)}`, `green-border-{number(1~5)}`, `orange-border-{number(1~5)}`, `yellow-border-{number(1~5)}`) | primary |
+| color    | **String** (`primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link`, `blue`, `green`, `orange`, `yellow`, `red`, `white`, `black`, `white-blue`, `file`, `cyan`, `navy`, `lightblue`, `white-border-[1~5]`, `white-border-blue-[1~5]`, `gray-border-[1~5]}`, `blue-border-[1~5]}`, `green-border-[1~5]}`, `orange-border-[1~5]}`, `yellow-border-[1~5]}`) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
 | weight   | **String** or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
@@ -68,11 +68,10 @@ In your components template:
     If you enter a specific unit, the font size is set to that unit.
     For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `10em`, `10rem`, `10px` or `10pt`.  
     If you enter a `ss`, `s`, `m` or `l`, the size is set to a predetermined size. By default, this is `m`.
-    
-        * `ss` : 0.75rem
-        * `s` : 0.875rem
-        * `m` : 1rem
-        * `l` : 1.5rem
+    * `ss` : 0.75rem
+    * `s` : 0.875rem
+    * `m` : 1rem
+    * `l` : 1.5rem
         
     Example:
     ```html

@@ -3,7 +3,7 @@
             `v-btn--color-${color}`,
             `v-btn--size-${size}`,
             {
-              'v-btn--loading-dot': loadingDot
+              'v-btn--loading-dot': loadingDot,
             }
           ]"
           class="v-btn v-btn--basic"

@@ -27,4 +27,12 @@
         height: 100%;
         justify-content: center;
     }
+
+    svg, img {
+        color: inherit;
+        display: flex;
+        align-items: center;
+        width: 1.375em;
+        height: 1.375em;
+    }
 }

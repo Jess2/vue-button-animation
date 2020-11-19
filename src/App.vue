@@ -29,6 +29,34 @@
           <a-basic size="10" loadingDot @click="onClick">Login</a-basic>
         </div>
       </li>
+      <li>
+        <span>icon</span>
+        <div>
+          <button-basic color="orange" size="l">
+            버튼
+          </button-basic>
+          <button-basic color="orange-border-1" size="s">
+            버튼
+          </button-basic>
+          <button-basic color="light" size="s">
+            버튼
+          </button-basic>
+          <button-basic size="s">
+            버튼
+          </button-basic>
+          <button-basic size="s">
+            버튼
+            <img src="../src/assets/images/accessibility-black-18dp.svg" alt="Image">
+          </button-basic>
+          <button-basic size="s">
+            <img src="../src/assets/images/baseline_all_out_black_18dp.png" alt="Image">
+            버튼
+          </button-basic>
+          <button-basic size="s">
+            버튼
+          </button-basic>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
