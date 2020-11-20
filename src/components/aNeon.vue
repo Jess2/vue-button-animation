@@ -49,6 +49,10 @@
         type: [Number, String],
         default: null,
       },
+      disabled: {
+        type: Boolean,
+        default: false
+      },
       loadingDot: {
         type: Boolean,
         default: false,
