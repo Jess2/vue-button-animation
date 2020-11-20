@@ -1,12 +1,5 @@
 <template>
-  <a :class="[
-      `color-${color}`,
-      `size-${size}`,
-      {
-        'disabled': disabled,
-        'loading-dot': loadingDot
-      }
-     ]"
+  <a :class="classNames"
      class="v-btn basic"
      :style="style"
      role="button"
@@ -27,6 +20,9 @@
 </template>
 
 <script>
+  import setClassName from "../assets/js/setClassName";
+  import setStyle from "../assets/js/setStyle";
+
   export default {
     name: 'a-basic',
     props: {
@@ -59,38 +55,15 @@
         default: false,
       },
     },
-    data () {
-      return {}
-    },
     computed: {
       style () {
-        let style = {
-          'fontSize': this.changeUnit(this.size),
-          'fontWeight': this.weight,
-        };
-
-        if (this.width) {
-          style.minWidth = this.changeUnit(this.width);
-        }
-
-        if (this.height) {
-          style.height = this.changeUnit(this.height);
-        }
-
-        return style;
-      }
-    },
-    mounted () {
-    },
-    watch: {},
-    methods: {
-      changeUnit (value) {
-        if (typeof value === 'number' || !isNaN(Number(value))) {
-          return `${value}px`;
-        } else if (typeof value === 'string') {
-          return value;
-        }
+        return setStyle(this.size, this.weight, this.width, this.height);
       },
+      classNames () {
+        return setClassName(this.color, this.size, this.loadingDot, this.disabled);
+      },
+    },
+    methods: {
       onClick (e) {
         this.$emit('click', e);
       },
@@ -119,7 +92,6 @@
         this.$emit('mouseover', e);
       },
     },
-    components: {}
   }
 </script>
 

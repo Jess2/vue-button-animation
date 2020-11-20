@@ -3,7 +3,6 @@
 .v-btn {
   &.press {
     padding: 0;
-    background: transparent;
     border-radius: 10px;
     transition: all .1s ease-in-out;
     box-shadow: 0 3px rgba(128, 128, 128, 1),
@@ -13,6 +12,10 @@
     0 7px rgba(88, 88, 88, 1),
     0 8px rgba(78, 78, 78, 1),
     0 14px 6px -1px rgba(128, 128, 128, 1);
+
+    &:not(:disabled):not(.disabled):not(.loading) {
+      background: transparent;
+    }
 
     .slot-wrapper {
       border-radius: 10px;

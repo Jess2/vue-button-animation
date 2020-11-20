@@ -1,129 +1,127 @@
 .v-btn {
   &.color {
-    // bootstrap colors
-    &-primary.basic,
-    &-primary.press .slot-wrapper {
+    &-primary,
+    &-primary .slot-wrapper {
       background: #0069d9;
       color: $white;
     }
 
-    &-secondary.basic,
-    .press .slot-wrapper {
+    &-secondary,
+    &-secondary .slot-wrapper {
       background: #6c757d;
       color: $white;
     }
 
-    &-success.basic,
-    &-success.press .slot-wrapper {
+    &-success,
+    &-success .slot-wrapper {
       background: #28a745;
       color: $white;
     }
 
-    &-danger.basic,
-    &-danger.press .slot-wrapper {
+    &-danger,
+    &-danger .slot-wrapper {
       background: #c82333;
       color: $white;
     }
 
-    &-warning.basic,
-    &-warning.press .slot-wrapper {
+    &-warning,
+    &-warning .slot-wrapper {
       background: #ffc107;
       color: $white;
     }
 
-    &-info.basic,
-    &-info.press .slot-wrapper {
+    &-info,
+    &-info .slot-wrapper {
       background: #17a2b8;
       color: $white;
     }
 
-    &-light.basic,
-    &-light.press .slot-wrapper {
+    &-light,
+    &-light .slot-wrapper {
       background: #f8f9fa;
       color: #343a40;
     }
 
-    &-dark.basic,
-    &-dark.press .slot-wrapper {
+    &-dark,
+    &-dark .slot-wrapper {
       background: #343a40;
       color: $white;
     }
 
-    // maxst colors
-    &-blue.basic,
-    &-blue.press .slot-wrapper {
+    &-blue,
+    &-blue .slot-wrapper {
       background: $blue500;
       color: $white;
     }
 
-    &-green.basic,
-    &-green.press .slot-wrapper {
+    &-green,
+    &-green .slot-wrapper {
       background: $green400;
       color: $white;
     }
 
-    &-orange.basic,
-    &-orange.press .slot-wrapper {
+    &-orange,
+    &-orange .slot-wrapper {
       background: $orange400;
       color: $white;
     }
 
-    &-yellow.basic,
-    &-yellow.press .slot-wrapper {
+    &-yellow,
+    &-yellow .slot-wrapper {
       background: $yellow400;
       color: $white;
     }
 
-    &-red.basic,
-    &-red.press .slot-wrapper {
+    &-red,
+    &-red .slot-wrapper {
       background: $red400;
       color: $white;
     }
 
-    &-white.basic,
-    &-white.press .slot-wrapper {
+    &-white,
+    &-white .slot-wrapper {
       background: $white;
       color: $gray900;
     }
 
-    &-black.basic,
-    &-black.press .slot-wrapper {
+    &-black,
+    &-black .slot-wrapper {
       background: $gray900;
       color: $white;
     }
 
-    &-white-blue.basic,
-    &-white-blue.press .slot-wrapper {
+    &-white-blue,
+    &-white-blue .slot-wrapper {
       background: $white;
       color: $blue500;
     }
 
-    &-file.basic,
-    &-file.press .slot-wrapper {
+    &-file,
+    &-file .slot-wrapper {
       background: linear-gradient(to bottom, $white 1%, $gray100);
       color: $gray900;
       box-shadow: 0 0 0 0.5px $gray400 inset;
     }
 
-    &-cyan.basic,
-    &-cyan.press .slot-wrapper {
+    &-cyan,
+    &-cyan .slot-wrapper {
       background: $cyan300;
       color: $white;
     }
 
-    &-navy.basic,
-    &-navy.press .slot-wrapper {
+    &-navy,
+    &-navy .slot-wrapper {
       background: $blue900;
       color: $white;
     }
 
-    &-lightblue.basic,
-    &-lightblue.press .slot-wrapper {
+    &-lightblue,
+    &-lightblue .slot-wrapper {
       background: $lightblue400;
       color: $white;
     }
 
-    &-white-border.basic {
+    &-white-border {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: transparent;
@@ -133,7 +131,7 @@
       }
     }
 
-    &-white-border-blue.basic {
+    &-white-border-blue {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: transparent;
@@ -143,7 +141,7 @@
       }
     }
 
-    &-gray-border.basic {
+    &-gray-border {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: $white;
@@ -153,7 +151,7 @@
       }
     }
 
-    &-blue-border.basic {
+    &-blue-border {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: $white;
@@ -163,7 +161,7 @@
       }
     }
 
-    &-green-border.basic {
+    &-green-border {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: $white;
@@ -173,7 +171,7 @@
       }
     }
 
-    &-orange-border.basic {
+    &-orange-border {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: $white;
@@ -183,7 +181,7 @@
       }
     }
 
-    &-yellow-border.basic {
+    &-yellow-border {
       @for $i from 1 to 6 {
         &-#{$i} {
           background: $white;

@@ -14,12 +14,12 @@
 }
 
 .v-btn {
-  &.loading-dot {
+  &.loading {
     opacity: 0.3;
     pointer-events: none;
 
     .slot-wrapper {
-      opacity: 0;
+      opacity: 0 !important;
     }
 
     .loader--dot {

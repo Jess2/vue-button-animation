@@ -51,7 +51,7 @@ In your components template:
 |----------|--------------|---------------|
 | color    | **String** ([Predetermined Colors](#predetermined-colors)) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
-| weight   | **String** or **Number** (100 ~ 900) | 800 |
+| weight   | **String** (normal, bold, bolder, lighter, ...) or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
 | disabled | **Boolean** | false |
@@ -91,13 +91,14 @@ In your components template:
 <br>
 
 * **`weight`** - You can set the font weight between 100 and 900, regardless of whether the type of value is string or number.
-    For example, you can enter `weight="400"` or `:weight="400"`. By default, this is `800`.
+    For example, you can enter `weight="400"` or `:weight="400"`. Also you can enter a basic property like 'bold'. By default, this is `800`.
     
     Example:
     ```html
       <button-basic>Button</button-basic>  <!-- By default, this is `800`. -->
       <button-basic weight="400">Button</button-basic>
       <button-basic :weight="400">Button</button-basic>
+      <button-basic weight="bold">Button</button-basic>
     ```
 <br>
 
@@ -170,7 +171,8 @@ In your components template:
 <br>
 
 * **`button-press`**, **`a-press`**
-    * primary, secondary, success, danger, warning, info, light, dark, blue, green, orange, yellow, red, ~~white,~~ black, ~~white-blue,~~ ~~file,~~ cyan, navy, lightblue
+    * primary, secondary, success, danger, warning, info, light, dark,
+    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue
     * ~~white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]~~
 
 <br>
