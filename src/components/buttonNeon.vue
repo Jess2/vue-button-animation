@@ -1,6 +1,6 @@
 <template>
   <button :class="classNames"
-          class="v-btn basic"
+          class="v-btn neon"
           :style="style"
           @click="onClick"
           @dblclick="onDblclick"
@@ -11,6 +11,10 @@
           @mousemove="onMousemove"
           @mouseout="onMouseout"
           @mouseover="onMouseover">
+    <span class="neon__line"></span>
+    <span class="neon__line"></span>
+    <span class="neon__line"></span>
+    <span class="neon__line"></span>
     <span class="slot-wrapper">
       <slot></slot>
     </span>
@@ -23,11 +27,11 @@
   import setStyle from "../assets/js/setStyle";
 
   export default {
-    name: 'button-basic',
+    name: 'button-neon',
     props: {
-      color: {
-        type: String,
-        default: 'primary',
+      hueRotate: {
+        type: [Number, String],
+        default: 0,
       },
       size: {
         type: [Number, String],
@@ -91,5 +95,5 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../assets/style/buttonBasic.scss';
+  @import '../assets/style/buttonNeon.scss';
 </style>

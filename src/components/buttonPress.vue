@@ -52,10 +52,10 @@
     },
     computed: {
       style () {
-        return setStyle(this.size, this.weight, this.width, this.height);
+        return setStyle(this);
       },
       classNames () {
-        return setClassName(this.color, this.size, this.loadingDot);
+        return setClassName(this);
       },
     },
     methods: {

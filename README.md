@@ -40,6 +40,8 @@ In your components template:
 | a-basic        | color, size, weight, width, height, disabled, loadingDot                 |
 | button-press   | color, size, weight, width, height, loadingDot                           |
 | a-press        | color, size, weight, width, height, disabled, loadingDot                 |
+| button-neon    | size, weight, width, height, loadingDot, hueRotate                       |
+| a-neon         | size, weight, width, height, disabled, loadingDot, hueRotate             |
 
 * **`button-{type}`** - It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`.
 * **`a-{type}`** - It acts as the `a` element. So it performs the basic attributes of `a` element like `href`.
@@ -49,13 +51,14 @@ In your components template:
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** ([Predetermined Colors](#predetermined-colors)) | primary |
+| color    | **String** ([Predefined Colors](#predetermined-colors)) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
 | weight   | **String** (normal, bold, bolder, lighter, ...) or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
 | height   | **String** or **Number** | N/A |
 | disabled | **Boolean** | false |
 | loadingDot | **Boolean** | false |
+| hueRotate | **String** or **Number** | 0 |
 
 * **`color`** - You can set button's color to a [predetermined color](#predetermined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
@@ -158,10 +161,23 @@ In your components template:
       <a-basic :loadingDot="true">Link</a-basic>
       <a-basic :loadingDot="false">Link</a-basic>
     ```
+  
+* **`hueRotate`** - You can use this prop to filter the color of the button. By default, this is `0`.
+    You can set the hueRotate between 0 and 359, regardless of whether the type of value is string or number.
+
+    Example:
+    ```html
+      <button-neon :hueRotate="180">BUTTON</button-neon>
+      <button-neon hueRotate="180">BUTTON</button-neon>
+      <button-neon hueRotate="270">BUTTON</button-neon>
+      <a-neon :hueRotate="180">LINK</a-neon>
+      <a-neon hueRotate="180">LINK</a-neon>
+      <a-neon hueRotate="270">LINK</a-neon>
+    ```
 
 <br><br>
 
-## Predetermined Colors
+## Predefined Colors
 
 * **`button-basic`**, **`a-basic`**
     * primary, secondary, success, danger, warning, info, light, dark,
