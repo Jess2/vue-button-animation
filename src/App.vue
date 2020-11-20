@@ -114,6 +114,30 @@
           <button-press color="lightblue" loadingDot>lightblue</button-press>
         </div>
       </li>
+      <li>
+        <span>Neon</span>
+        <div>
+          <button-neon size="10">BUTTON</button-neon>
+          <button-neon size="ss">BUTTON</button-neon>
+          <button-neon size="s" :hueRotate="180">BUTTON</button-neon>
+          <button-neon size="s" hueRotate="180">BUTTON</button-neon>
+          <button-neon size="s" hueRotate="270">BUTTON</button-neon>
+          <button-neon size="m" disabled>BUTTON</button-neon>
+          <button-neon size="l" loadingDot>BUTTON</button-neon>
+          <button-neon width="80" height="80">B</button-neon>
+          <button-neon weight="400">Button</button-neon>
+          <br>
+          <a-neon size="10">BUTTON</a-neon>
+          <a-neon size="ss">BUTTON</a-neon>
+          <a-neon size="s" :hueRotate="180">BUTTON</a-neon>
+          <a-neon size="s" hueRotate="180">BUTTON</a-neon>
+          <a-neon size="s" hueRotate="270">BUTTON</a-neon>
+          <a-neon size="m" disabled>BUTTON</a-neon>
+          <a-neon size="l" loadingDot>BUTTON</a-neon>
+          <a-neon width="80" height="80">B</a-neon>
+          <a-neon weight="400">Button</a-neon>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
@@ -127,9 +151,6 @@
       }
     },
     mounted () {
-      // setTimeout(() => {
-      //   this.isLoading = true;
-      // }, 3000);
     },
     methods: {
       onClick () {
@@ -143,12 +164,13 @@
   html {
     height: 100vh;
     font-family: sans-serif;
-    background: #dcdcdc;
+    background: #000000;
   }
 
   #app {
     height: 100%;
     padding: 30px 50px 500px;
+    color: white;
 
     ul {
       margin: 0;

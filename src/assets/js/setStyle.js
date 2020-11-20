@@ -1,15 +1,15 @@
-export default (size, weight, width, height) => {
+export default (_this) => {
   let style = {
-    'fontSize': changeUnit(size),
-    'fontWeight': weight,
+    'fontSize': changeUnit(_this.size),
+    'fontWeight': _this.weight,
   };
 
-  if (width) {
-    style.minWidth = changeUnit(width);
+  if (_this.width) {
+    style.minWidth = changeUnit(_this.width);
   }
 
-  if (height) {
-    style.height = changeUnit(height);
+  if (_this.height) {
+    style.height = changeUnit(_this.height);
   }
 
   return style;
