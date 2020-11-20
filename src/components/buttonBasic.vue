@@ -1,12 +1,6 @@
 <template>
-  <button :class="[
-            `v-btn--color-${color}`,
-            `v-btn--size-${size}`,
-            {
-              'v-btn--loading-dot': loadingDot,
-            }
-          ]"
-          class="v-btn v-btn--basic"
+  <button :class="classNames"
+          class="v-btn basic"
           :style="style"
           @click="onClick"
           @dblclick="onDblclick"
@@ -25,6 +19,9 @@
 </template>
 
 <script>
+  import setClassName from "../assets/js/setClassName";
+  import setStyle from "../assets/js/setStyle";
+
   export default {
     name: 'button-basic',
     props: {
@@ -53,38 +50,15 @@
         default: false,
       },
     },
-    data () {
-      return {}
-    },
     computed: {
       style () {
-        let style = {
-          'fontSize': this.changeUnit(this.size),
-          'fontWeight': this.weight,
-        };
-
-        if (this.width) {
-          style.minWidth = this.changeUnit(this.width);
-        }
-
-        if (this.height) {
-          style.height = this.changeUnit(this.height);
-        }
-
-        return style;
-      }
-    },
-    mounted () {
-    },
-    watch: {},
-    methods: {
-      changeUnit (value) {
-        if (typeof value === 'number' || !isNaN(Number(value))) {
-          return `${value}px`;
-        } else if (typeof value === 'string') {
-          return value;
-        }
+        return setStyle(this.size, this.weight, this.width, this.height);
       },
+      classNames () {
+        return setClassName(this.color, this.size, this.loadingDot);
+      },
+    },
+    methods: {
       onClick (e) {
         this.$emit('click', e);
       },
@@ -113,7 +87,6 @@
         this.$emit('mouseover', e);
       },
     },
-    components: {}
   }
 </script>
 
