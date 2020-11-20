@@ -51,7 +51,7 @@ In your components template:
 ## Props
 | Prop     | Type (Range) | Default value |
 |----------|--------------|---------------|
-| color    | **String** ([Predefined Colors](#predetermined-colors)) | primary |
+| color    | **String** ([Predefined Colors](#Predefined-colors)) | primary |
 | size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
 | weight   | **String** (normal, bold, bolder, lighter, ...) or **Number** (100 ~ 900) | 800 |
 | width    | **String** or **Number** | N/A |
@@ -60,7 +60,7 @@ In your components template:
 | loadingDot | **Boolean** | false |
 | hueRotate | **String** or **Number** | 0 |
 
-* **`color`** - You can set button's color to a [predetermined color](#predetermined-colors)
+* **`color`** - You can set button's color to a [Predefined color](#Predefined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
 
     Example:
@@ -75,7 +75,7 @@ In your components template:
     For Example, if you enter `size="20"` or `:size="20"`, the size is set to `20px`.  
     If you enter a specific unit, the font size is set to that unit.
     For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `10em`, `10rem`, `10px` or `10pt`.  
-    If you enter a `ss`, `s`, `m` or `l`, the size is set to a predetermined size. By default, this is `m`.
+    If you enter a `ss`, `s`, `m` or `l`, the size is set to a Predefined size. By default, this is `m`.
     * `ss` : 0.75rem
     * `s` : 0.875rem
     * `m` : 1rem
@@ -164,6 +164,7 @@ In your components template:
   
 * **`hueRotate`** - You can use this prop to filter the color of the button. By default, this is `0`.
     You can set the hueRotate between 0 and 359, regardless of whether the type of value is string or number.
+    If you want to know about this feature, please visit [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate()).
 
     Example:
     ```html
