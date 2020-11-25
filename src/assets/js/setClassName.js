@@ -1,5 +1,5 @@
 export default (_this) => {
-  const SIZES = ['ss', 's', 'm', 'l'];
+  const SIZES = ['ss', 's', 'm', 'l', 'basic'];
   let classNames = [];
 
   if (_this.color) {
