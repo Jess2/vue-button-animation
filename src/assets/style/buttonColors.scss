@@ -121,6 +121,18 @@
       color: $white;
     }
 
+    &-lightsalmon,
+    &-lightsalmon .slot-wrapper {
+      background: $orange50;
+      color: $orange400;
+    }
+
+    &-lightgray,
+    &-lightgray .slot-wrapper {
+      background: $gray100;
+      color: $gray500;
+    }
+
     &-white-border {
       @for $i from 1 to 6 {
         &-#{$i} {

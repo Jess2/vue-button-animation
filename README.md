@@ -203,14 +203,14 @@ In your components template:
 
 * **`button-basic`**, **`a-basic`**
     * primary, secondary, success, danger, warning, info, light, dark,
-    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue
+    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue, lightsalmon, lightgray
     * white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]
 
 <br>
 
 * **`button-press`**, **`a-press`**
     * primary, secondary, success, danger, warning, info, light, dark,
-    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue
+    blue, green, orange, yellow, red, white, black, white-blue, file, cyan, navy, lightblue, lightsalmon, lightgray
     * ~~white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]~~
 
 <br>

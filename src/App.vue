@@ -5,6 +5,22 @@
       <li>
         <span>Basic</span>
         <div>
+          <button-basic color="lightsalmon">Button</button-basic>
+          <button-basic color="lightgray">Button</button-basic>
+          <a-basic color="lightsalmon">Button</a-basic>
+          <a-basic color="lightgray">Button</a-basic>
+          <button-press color="lightsalmon">Button</button-press>
+          <button-press color="lightgray">Button</button-press>
+          <a-press color="lightsalmon">Button</a-press>
+          <a-press color="lightgray">Button</a-press>
+          <button-basic color="lightsalmon" loadingDot>Button</button-basic>
+          <button-basic color="lightgray" loadingDot>Button</button-basic>
+          <a-basic color="lightsalmon" loadingDot>Button</a-basic>
+          <a-basic color="lightgray" loadingDot>Button</a-basic>
+          <button-press color="lightsalmon" loadingDot>Button</button-press>
+          <button-press color="lightgray" loadingDot>Button</button-press>
+          <a-press color="lightsalmon" loadingDot>Button</a-press>
+          <a-press color="lightgray" loadingDot>Button</a-press>
           <button-basic color="navy" circle="40" size="16">
             <img src="../src/assets/images/account.png" alt="Icon">
           </button-basic>

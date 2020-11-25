@@ -62,7 +62,9 @@
     &.color {
       &-light,
       &-white,
-      &-file {
+      &-file,
+      &-lightsalmon,
+      &-lightgray {
         .loader--dot {
           @include animation--dot-dark;
         }
