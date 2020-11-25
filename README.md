@@ -73,15 +73,16 @@ In your components template:
     ```
 <br>
 
-* **`size`** - It means the font size. If you enter a number or a string excluding unit, the unit is set to `px`.
+* **`size`** - It means the font size or the size of button. If you enter a number or a string excluding unit, the unit is set to `px`.
     For Example, if you enter `size="20"` or `:size="20"`, the size is set to `20px`.  
     If you enter a specific unit, the font size is set to that unit.
     For Example, If you enter `size="10em"`, `size="10rem"`, `size="10px"` or `size="10pt"`, the each size is set to `10em`, `10rem`, `10px` or `10pt`.  
-    If you enter a `ss`, `s`, `m` or `l`, the size is set to a Predefined size. By default, this is `m`.
+    If you enter a `ss`, `s`, `m`, `l` or `basic`, the size is set to a Predefined size. By default, this is `m`.
     * `ss` : 0.75rem
     * `s` : 0.875rem
     * `m` : 1rem
     * `l` : 1.5rem
+    * `basic` : `font-size` is 1rem, `min-width` is 120px and `height` is 40px.
         
     Example:
     ```html

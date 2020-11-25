@@ -5,7 +5,7 @@
       <li>
         <span>Basic</span>
         <div>
-          <button-basic color="lightsalmon">Button</button-basic>
+          <button-basic size="basic" color="lightsalmon">Button</button-basic>
           <button-basic color="lightgray">Button</button-basic>
           <a-basic color="lightsalmon">Button</a-basic>
           <a-basic color="lightgray">Button</a-basic>
@@ -130,7 +130,7 @@
       <li>
         <span>Press</span>
         <div>
-          <button-press color="primary" weight="bolder" :circle="100">primary</button-press>
+          <button-press size="basic" color="primary" weight="bolder" :circle="100">primary</button-press>
           <button-press color="secondary" >secondary</button-press>
           <button-press color="success">success</button-press>
           <button-press color="danger">danger</button-press>
@@ -178,7 +178,8 @@
       <li>
         <span>Neon</span>
         <div>
-          <button-neon size="10" square="80">BUTTON</button-neon>
+          <button-neon size="basic" square="80">BUTTON</button-neon>
+          <button-neon square="80">BUTTON</button-neon>
           <button-neon size="ss" circle="100">BUTTON</button-neon>
           <button-neon size="s" :hueRotate="180">BUTTON</button-neon>
           <button-neon size="s" hueRotate="180">BUTTON</button-neon>
