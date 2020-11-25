@@ -36,8 +36,8 @@ In your components template:
 ## Components
 | Name           | Available Props                                                          |
 |----------------|--------------------------------------------------------------------------|
-| button-basic   | color, size, weight, width, height, loadingDot                           |
-| a-basic        | color, size, weight, width, height, disabled, loadingDot                 |
+| button-basic   | color, size, weight, width, height, loadingDot, circle, square           |
+| a-basic        | color, size, weight, width, height, disabled, loadingDot, circle, square |
 | button-press   | color, size, weight, width, height, loadingDot                           |
 | a-press        | color, size, weight, width, height, disabled, loadingDot                 |
 | button-neon    | size, weight, width, height, loadingDot, hueRotate                       |
@@ -49,16 +49,18 @@ In your components template:
 <br><br>
 
 ## Props
-| Prop     | Type (Range) | Default value |
-|----------|--------------|---------------|
-| color    | **String** ([Predefined Colors](#Predefined-colors)) | primary |
-| size     | **String** (`ss`, `s`, `m`, `l`) or **Number** | m |
-| weight   | **String** (normal, bold, bolder, lighter, ...) or **Number** (100 ~ 900) | 800 |
-| width    | **String** or **Number** | N/A |
-| height   | **String** or **Number** | N/A |
-| disabled | **Boolean** | false |
-| loadingDot | **Boolean** | false |
-| hueRotate | **String** or **Number** | 0 |
+| Prop          | Type (Range)                                                              | Default value |
+|---------------|---------------------------------------------------------------------------|---------------|
+| color         | **String** ([Predefined Colors](#Predefined-colors))                      | primary       |
+| size          | **String** (`ss`, `s`, `m`, `l`) or **Number**                            | m             |
+| weight        | **String** (normal, bold, bolder, lighter, ...) or **Number** (100 ~ 900) | 800           |
+| width         | **String** or **Number**                                                  | N/A           |
+| height        | **String** or **Number**                                                  | N/A           |
+| disabled      | **Boolean**                                                               | false         |
+| loadingDot    | **Boolean**                                                               | false         |
+| hueRotate     | **String** or **Number**                                                  | 0             |
+| circle        | **String** or **Number**                                                  | N/A           |
+| square        | **String** or **Number**                                                  | N/A           |
 
 * **`color`** - You can set button's color to a [Predefined color](#Predefined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
@@ -162,6 +164,8 @@ In your components template:
       <a-basic :loadingDot="false">Link</a-basic>
     ```
   
+<br>
+  
 * **`hueRotate`** - You can use this prop to filter the color of the button. By default, this is `0`.
     You can set the hueRotate between 0 and 359, regardless of whether the type of value is string or number.
     If you want to know about this feature, please visit [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate()).
@@ -174,6 +178,23 @@ In your components template:
       <a-neon :hueRotate="180">LINK</a-neon>
       <a-neon hueRotate="180">LINK</a-neon>
       <a-neon hueRotate="270">LINK</a-neon>
+    ```
+  
+<br>
+
+* **`circle` / `square`** - You can create circle or square buttons by using this prop.
+    If you enter a number or a string excluding unit, the unit is set to `px`.
+    If you enter a specific unit, the size of button is set to that unit.
+    If the length of button's text data is longer than the button size, it is hidden.
+    
+    Example:
+    ```html
+      <button-basic circle="10em">Button</button-basic>
+      <button-basic :circle="100">Button</button-basic>
+      <button-basic circle="100">Button</button-basic>
+      <button-basic sqaure="10em">Button</button-basic>
+      <button-basic :square="100">Button</button-basic>
+      <button-basic square="100">Button</button-basic>
     ```
 
 <br><br>

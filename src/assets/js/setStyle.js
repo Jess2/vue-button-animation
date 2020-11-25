@@ -4,6 +4,16 @@ export default (_this) => {
     'fontWeight': _this.weight,
   };
 
+  if (_this.circle) {
+    style.width = changeUnit(_this.circle);
+    style.height = changeUnit(_this.circle);
+  }
+
+  if (_this.square) {
+    style.width = changeUnit(_this.square);
+    style.height = changeUnit(_this.square);
+  }
+
   if (_this.width) {
     style.minWidth = changeUnit(_this.width);
   }

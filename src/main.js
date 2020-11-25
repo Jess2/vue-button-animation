@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
-import vueButtonAnimation from './index.js';
+import VueButtonAnimation from './index.js';
 
-Vue.use(vueButtonAnimation);
+Vue.use(VueButtonAnimation);
 
 new Vue({
   el: '#app',

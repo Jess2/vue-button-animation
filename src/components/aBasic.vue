@@ -54,6 +54,14 @@
         type: Boolean,
         default: false,
       },
+      circle: {
+        type: [Number, String],
+        default: null,
+      },
+      square: {
+        type: [Number, String],
+        default: null,
+      },
     },
     computed: {
       style () {
