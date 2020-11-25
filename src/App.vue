@@ -5,39 +5,78 @@
       <li>
         <span>Basic</span>
         <div>
-          <button-basic color="primary">Primary</button-basic>
-          <button-basic color="secondary">Secondary</button-basic>
-          <button-basic color="success">Success</button-basic>
-          <button-basic color="danger">Danger</button-basic>
-          <button-basic color="warning">Warning</button-basic>
-          <button-basic color="info">Info</button-basic>
-          <button-basic color="dark">Dark</button-basic>
-          <button-basic color="blue">Blue</button-basic>
-          <button-basic color="green">Green</button-basic>
-          <button-basic color="orange">Orange</button-basic>
-          <button-basic color="yellow">Yellow</button-basic>
-          <button-basic color="red">Red</button-basic>
-          <button-basic color="white">White</button-basic>
-          <button-basic color="black">Black</button-basic>
-          <button-basic color="white-blue">White Blue</button-basic>
-          <button-basic color="file">File</button-basic>
-          <button-basic color="cyan">Cyan</button-basic>
-          <button-basic color="navy">Navy</button-basic>
-          <button-basic color="lightblue">Lightblue</button-basic>
+          <button-basic color="navy" circle="50">
+            <img src="../src/assets/images/account.png" alt="Icon">
+          </button-basic>
+          <button-basic color="black" circle="50" size="ss">
+            <img src="../src/assets/images/account.png" alt="Icon">Test
+          </button-basic>
+          <button-basic color="black" circle="50">
+            <img src="../src/assets/images/account.png" alt="Icon">Test
+          </button-basic>
+          <button-basic color="black" circle="70">
+            <img src="../src/assets/images/account.png" alt="Icon">Test
+          </button-basic>
           <br>
-          <button-basic color="white-border-1">White Border 1</button-basic>
-          <button-basic color="white-border-blue-1">White Border Blue 1</button-basic>
-          <button-basic color="gray-border-1">Gray Border 1</button-basic>
-          <button-basic color="blue-border-1">Blue Border 1</button-basic>
-          <button-basic color="green-border-1">Green Border 1</button-basic>
-          <button-basic color="orange-border-1">Orange Border 1</button-basic>
-          <button-basic color="yellow-border-1">Yellow Border 1</button-basic>
+          <button-basic circle="10em">PrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimary</button-basic>
+          <button-basic color="secondary" :circle="100">Secondary</button-basic>
+          <button-basic color="success" :circle="100">Success</button-basic>
+          <button-basic color="danger" :circle="100">Danger</button-basic>
+          <button-basic color="warning" :circle="100">Warning</button-basic>
+          <button-basic color="info" :circle="100">Info</button-basic>
+          <button-basic color="dark" :circle="100">Dark</button-basic>
+          <button-basic color="blue" :circle="100">Blue</button-basic>
+          <button-basic color="green" :circle="100">Green</button-basic>
+          <button-basic color="orange" :circle="100">Orange</button-basic>
+          <button-basic color="yellow" :circle="100">Yellow</button-basic>
+          <button-basic color="red" :circle="100">Red</button-basic>
+          <button-basic color="white" :circle="100">White</button-basic>
+          <button-basic color="black" :circle="100">Black</button-basic>
+          <button-basic color="white-blue" :circle="100">White Blue</button-basic>
+          <button-basic color="file" :circle="100">File</button-basic>
+          <button-basic color="cyan" :circle="100">Cyan</button-basic>
+          <button-basic color="navy" :circle="100">Navy</button-basic>
+          <button-basic color="lightblue" :circle="100">Lightblue</button-basic>
+          <button-basic color="white-border-1" :circle="100">White Border 1</button-basic>
+          <button-basic color="white-border-blue-1" :circle="100">White Border Blue 1</button-basic>
+          <button-basic color="gray-border-1" :circle="100">Gray Border 1</button-basic>
+          <button-basic color="blue-border-1" :circle="100">Blue Border 1</button-basic>
+          <button-basic color="green-border-1" :circle="100">Green Border 1</button-basic>
+          <button-basic color="orange-border-1" :circle="100">Orange Border 1</button-basic>
+          <button-basic color="yellow-border-1" :circle="100">Yellow Border 1</button-basic>
+          <br>
+          <button-basic square="10em">Primary</button-basic>
+          <button-basic color="secondary" square="100">Secondary</button-basic>
+          <button-basic color="success" :square="100">Success</button-basic>
+          <button-basic color="danger" :square="100">Danger</button-basic>
+          <button-basic color="warning" :square="100">Warning</button-basic>
+          <button-basic color="info" :square="100">Info</button-basic>
+          <button-basic color="dark" :square="100">Dark</button-basic>
+          <button-basic color="blue" :square="100">Blue</button-basic>
+          <button-basic color="green" :square="100">Green</button-basic>
+          <button-basic color="orange" :square="100">Orange</button-basic>
+          <button-basic color="yellow" :square="100">Yellow</button-basic>
+          <button-basic color="red" :square="100">Red</button-basic>
+          <button-basic color="white" :square="100">White</button-basic>
+          <button-basic color="black" :square="100">Black</button-basic>
+          <button-basic color="white-blue" :square="100">White Blue</button-basic>
+          <button-basic color="file" :square="100">File</button-basic>
+          <button-basic color="cyan" :square="100">Cyan</button-basic>
+          <button-basic color="navy" :square="100">Navy</button-basic>
+          <button-basic color="lightblue" :square="100">Lightblue</button-basic>
+          <button-basic color="white-border-1" :square="100">White Border 1</button-basic>
+          <button-basic color="white-border-blue-1" :square="100">White Border Blue 1</button-basic>
+          <button-basic color="gray-border-1" :square="100">Gray Border 1</button-basic>
+          <button-basic color="blue-border-1" :square="100">Blue Border 1</button-basic>
+          <button-basic color="green-border-1" :square="100">Green Border 1</button-basic>
+          <a-basic color="orange-border-1" :square="100">Orange Border 1</a-basic>
+          <a-basic color="yellow-border-1" :square="100">Yellow Border 1</a-basic>
         </div>
       </li>
       <li>
         <span>Basic : loadingDot</span>
         <div>
-          <button-basic color="primary" loadingDot>Primary</button-basic>
+          <button-basic color="primary" loadingDot :circle="100">Primary</button-basic>
           <button-basic color="secondary" loadingDot>Secondary</button-basic>
           <button-basic color="success" loadingDot>Success</button-basic>
           <button-basic color="danger" loadingDot>Danger</button-basic>
@@ -63,13 +102,13 @@
           <button-basic color="blue-border-1" loadingDot>Blue Border 1</button-basic>
           <button-basic color="green-border-1" loadingDot>Green Border 1</button-basic>
           <button-basic color="orange-border-1" loadingDot>Orange Border 1</button-basic>
-          <button-basic color="yellow-border-1" loadingDot>Yellow Border 1</button-basic>
+          <a-basic color="yellow-border-1" loadingDot>Yellow Border 1</a-basic>
         </div>
       </li>
       <li>
         <span>Press</span>
         <div>
-          <button-press color="primary" weight="bolder">primary</button-press>
+          <button-press color="primary" weight="bolder" :circle="100">primary</button-press>
           <button-press color="secondary">secondary</button-press>
           <button-press color="success">success</button-press>
           <button-press color="danger">danger</button-press>
@@ -117,8 +156,8 @@
       <li>
         <span>Neon</span>
         <div>
-          <button-neon size="10">BUTTON</button-neon>
-          <button-neon size="ss">BUTTON</button-neon>
+          <button-neon size="10" square="80">BUTTON</button-neon>
+          <button-neon size="ss" circle="100">BUTTON</button-neon>
           <button-neon size="s" :hueRotate="180">BUTTON</button-neon>
           <button-neon size="s" hueRotate="180">BUTTON</button-neon>
           <button-neon size="s" hueRotate="270">BUTTON</button-neon>

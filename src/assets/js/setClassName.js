@@ -22,5 +22,13 @@ export default (_this) => {
     classNames.push(`hue-rotate-${_this.hueRotate}`);
   }
 
+  if (_this.circle) {
+    classNames.push(`circle`);
+  }
+
+  if (_this.square) {
+    classNames.push(`square`);
+  }
+
   return classNames;
 }
