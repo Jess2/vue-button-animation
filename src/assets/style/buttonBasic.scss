@@ -95,6 +95,20 @@
         }
       }
 
+      &-lightsalmon {
+        &:not(:disabled):not(.disabled):hover {
+          background: $orange100;
+          opacity: 1;
+        }
+      }
+
+      &-lightgray {
+        &:not(:disabled):not(.disabled):hover {
+          background: $gray300;
+          opacity: 1;
+        }
+      }
+
       &-white-border {
         @for $i from 1 to 6 {
           &-#{$i} {

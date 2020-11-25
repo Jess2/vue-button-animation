@@ -5,7 +5,29 @@
       <li>
         <span>Basic</span>
         <div>
-          <button-basic color="navy" circle="50">
+          <button-basic color="lightsalmon">Button</button-basic>
+          <button-basic color="lightgray">Button</button-basic>
+          <a-basic color="lightsalmon">Button</a-basic>
+          <a-basic color="lightgray">Button</a-basic>
+          <button-press color="lightsalmon">Button</button-press>
+          <button-press color="lightgray">Button</button-press>
+          <a-press color="lightsalmon">Button</a-press>
+          <a-press color="lightgray">Button</a-press>
+          <button-basic color="lightsalmon" loadingDot>Button</button-basic>
+          <button-basic color="lightgray" loadingDot>Button</button-basic>
+          <a-basic color="lightsalmon" loadingDot>Button</a-basic>
+          <a-basic color="lightgray" loadingDot>Button</a-basic>
+          <button-press color="lightsalmon" loadingDot>Button</button-press>
+          <button-press color="lightgray" loadingDot>Button</button-press>
+          <a-press color="lightsalmon" loadingDot>Button</a-press>
+          <a-press color="lightgray" loadingDot>Button</a-press>
+          <button-basic color="navy" circle="40" size="16">
+            <img src="../src/assets/images/account.png" alt="Icon">
+          </button-basic>
+          <button-basic color="navy" circle="40" size="16" loadingDot>
+            <img src="../src/assets/images/account.png" alt="Icon">
+          </button-basic>
+          <button-basic color="navy" circle="50" loadingDot>
             <img src="../src/assets/images/account.png" alt="Icon">
           </button-basic>
           <button-basic color="black" circle="50" size="ss">
@@ -19,8 +41,8 @@
           </button-basic>
           <br>
           <button-basic circle="10em">PrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimaryPrimary</button-basic>
-          <button-basic color="secondary" :circle="100">Secondary</button-basic>
-          <button-basic color="success" :circle="100">Success</button-basic>
+          <button-basic color="secondary" :circle="100" loadingDot>Secondary</button-basic>
+          <a-basic color="success" :circle="100" loadingDot>Success</a-basic>
           <button-basic color="danger" :circle="100">Danger</button-basic>
           <button-basic color="warning" :circle="100">Warning</button-basic>
           <button-basic color="info" :circle="100">Info</button-basic>
@@ -109,7 +131,7 @@
         <span>Press</span>
         <div>
           <button-press color="primary" weight="bolder" :circle="100">primary</button-press>
-          <button-press color="secondary">secondary</button-press>
+          <button-press color="secondary" >secondary</button-press>
           <button-press color="success">success</button-press>
           <button-press color="danger">danger</button-press>
           <button-press color="warning">warning</button-press>

@@ -25,9 +25,9 @@
     .loader--dot {
       display: block;
       position: absolute;
-      width: 0.4em;
-      height: 0.4em;
-      border-radius: 0.4em;
+      width: 7%;
+      padding-top: 7%;
+      border-radius: 50%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -38,10 +38,10 @@
         content: "";
         position: absolute;
         top: 0;
-        left: -0.8em;
-        height: 0.4em;
-        width: 0.4em;
-        border-radius: 0.4em;
+        left: -200%;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
         -webkit-animation: loader--dot-light-1 3s ease-in-out infinite;
         animation: loader--dot-light-1 3s ease-in-out infinite;
       }
@@ -50,10 +50,10 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 0.8em;
-        height: 0.4em;
-        width: 0.4em;
-        border-radius: 0.4em;
+        left: 200%;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
         -webkit-animation: loader--dot-light-3 3s ease-in-out infinite;
         animation: loader--dot-light-3 3s ease-in-out infinite;
       }
@@ -62,7 +62,9 @@
     &.color {
       &-light,
       &-white,
-      &-file {
+      &-file,
+      &-lightsalmon,
+      &-lightgray {
         .loader--dot {
           @include animation--dot-dark;
         }
