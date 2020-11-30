@@ -51,9 +51,11 @@
         default: null,
       },
       value: {
-        default: '',
+        type: [String, Boolean],
+        default: null,
       },
       modelValue: {
+        type: String,
         default: null,
       },
       checked: {
