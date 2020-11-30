@@ -1,69 +1,50 @@
 <template>
   <div id="app">
     <h1>vue-button-animation</h1>
-    <ul>
-      <li>
+    <radio-basic value="1" v-model="radioVal" size="2em">
+      Radio1
+    </radio-basic>
+    <radio-basic value="2" v-model="radioVal" disabled>
+      Radio2
+    </radio-basic>
+    <br>
+    <radio-basic value="3" color="yellow" v-model="radioVal">
+      Radio3
+    </radio-basic>
+    <radio-basic value="4" color="blue" v-model="radioVal">
+      Radio4
+    </radio-basic>
+    <radio-basic value="5" color="orange" v-model="radioVal">
+      Radio5
+    </radio-basic>
+    <radio-basic value="6" color="cyan" v-model="radioVal">
+      Radio6
+    </radio-basic>
 
-      </li>
-    </ul>
+    <p>radioVal : {{ radioVal }}</p>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'app',
-    data () {
-      return {
-        isLoading: false,
-      }
-    },
-    mounted () {
-    },
-    methods: {
-      onClick () {
-        this.isLoading = true;
-      }
+export default {
+  name: 'app',
+  data() {
+    return {
+      radioVal: '',
     }
+  },
+  watch: {
+  },
+  mounted() {
+  },
+  methods: {
   }
+}
 </script>
 
 <style lang="scss">
-  html {
-    height: 100vh;
-    font-family: sans-serif;
-    background: #000000;
-  }
-
-  #app {
-    height: 100%;
-    padding: 30px 50px 500px;
-    color: white;
-
-    ul {
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: flex;
-        padding: 50px 0;
-        border-bottom: 1px dashed gray;
-
-        > span {
-          display: flex;
-          align-items: center;
-          width: 150px;
-          padding: 10px 0;
-          font-weight: bold;
-        }
-
-        > div {
-          width: calc(100% - 160px);
-
-          button, a {
-            margin: 10px;
-          }
-        }
-      }
-    }
-  }
+html {
+  font-family: sans-serif;
+  padding: 50px 100px;
+}
 </style>

@@ -1,0 +1,62 @@
+@import 'radioColors.scss';
+
+.v-radio {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.4em;
+
+  &.basic {
+    > label {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      &.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      > input[type="radio"] {
+        position: absolute;
+        display: flex;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+
+        &:checked + span.radio-btn {
+          &:before {
+            box-shadow: inset 0 0 0 0.2em #ffffff;
+          }
+        }
+      }
+
+      span.radio-btn {
+        display: flex;
+        align-items: center;
+        transition: 0.25s;
+
+        &:before {
+          display: flex;
+          content: "";
+          background-color: #ffffff;
+          width: 1.1em;
+          height: 1.1em;
+          border-radius: 50%;
+          transition: 0.25s;
+          box-shadow: inset 0 0 0 0.8em #ffffff;
+          border: 0.15em solid #ced4da;
+        }
+      }
+
+      span.slot-wrapper {
+        display: flex;
+        align-items: center;
+        padding-left: 0.4em;
+      }
+    }
+  }
+}
