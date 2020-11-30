@@ -42,9 +42,31 @@ In your components template:
 | a-press        | color, size, weight, width, height, disabled, loadingDot                 |
 | button-neon    | size, weight, width, height, loadingDot, hueRotate                       |
 | a-neon         | size, weight, width, height, disabled, loadingDot, hueRotate             |
+| radio-basic    | color, size, id, name, value, checked, required, disabled                |
 
 * **`button-{type}`** - It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`.
+    * Example:
+        ```html
+          <button-basic>Button</button-basic>
+        ```
 * **`a-{type}`** - It acts as the `a` element. So it performs the basic attributes of `a` element like `href`.
+    * Example:
+        ```html
+          <a-basic>Button</a-basic>
+        ```
+* **`radio-{type}`** - It acts as the `input type="radio"`.
+    * Example:
+        ```html
+          <radio-basic value="dog" v-model="selectedAnimal" checked>
+            Dog
+          </radio-basic>
+          <radio-basic value="cat" v-model="selectedAnimal" disabled>
+            Cat
+          </radio-basic>
+          <radio-basic value="rabbit" v-model="selectedAnimal" color="yellow" size="2em">
+            Rabbit
+          </radio-basic>
+        ```
 
 <br><br>
 
@@ -61,6 +83,11 @@ In your components template:
 | hueRotate     | **String** or **Number**                                                  | 0             |
 | circle        | **String** or **Number**                                                  | N/A           |
 | square        | **String** or **Number**                                                  | N/A           |
+| id            | **String**                                                                | v-radio--{uuid}|
+| name          | **String**                                                                | N/A           |
+| value         | **String** or **Boolean**                                                 | N/A           |
+| checked       | **Boolean**                                                               | false         |
+| required      | **Boolean**                                                               | false         |
 
 * **`color`** - You can set button's color to a [Predefined color](#Predefined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
@@ -216,18 +243,27 @@ In your components template:
 
 <br>
 
+* **`radio-basic`**
+    * primary, secondary, success, danger, warning, info, light, dark,
+    blue, green, orange, yellow, red, white, black, ~~white-blue, file,~~ cyan, navy, lightblue, lightsalmon, lightgray
+    * ~~white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]~~
+
+<br>
+
 ## Events
-| Event      | Description |
-|------------|-------------|
-| click      | The event occurs when the user clicks on an element |
-| dblclick   | The event occurs when the user double-clicks on an element |
-| mousedown  | The event occurs when the user presses a mouse button over an element |
-| mouseenter | The event occurs when the pointer is moved onto an element |
-| mouseleave | The event occurs when the pointer is moved out of an element |
-| mousemove  | The event occurs when the pointer is moving while it is over an element |
-| mouseout   | The event occurs when a user moves the mouse pointer out of an element, or out of one of its children |
-| mouseover  | The event occurs when the pointer is moved onto an element, or onto one of its children |
-| mouseup    | The event occurs when a user releases a mouse button over an element |
+* **`<button>`**, **`<a>`**
+
+    | Event      | Description |
+    |------------|-------------|
+    | click      | The event occurs when the user clicks on an element |
+    | dblclick   | The event occurs when the user double-clicks on an element |
+    | mousedown  | The event occurs when the user presses a mouse button over an element |
+    | mouseenter | The event occurs when the pointer is moved onto an element |
+    | mouseleave | The event occurs when the pointer is moved out of an element |
+    | mousemove  | The event occurs when the pointer is moving while it is over an element |
+    | mouseout   | The event occurs when a user moves the mouse pointer out of an element, or out of one of its children |
+    | mouseover  | The event occurs when the pointer is moved onto an element, or onto one of its children |
+    | mouseup    | The event occurs when a user releases a mouse button over an element |
 
 <br><br>
 
