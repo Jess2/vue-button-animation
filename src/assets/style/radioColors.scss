@@ -1,0 +1,36 @@
+@import 'colors.scss';
+
+.v-radio {
+  &.color {
+    $colors: primary '#0069d9',
+             secondary '#6c757d',
+             success '#28a745',
+             danger '#c82333',
+             warning '#ffc107',
+             info '#17a2b8',
+             light '#f8f9fa',
+             dark '#343a40',
+             blue $blue500,
+             green $green400,
+             orange $orange400,
+             yellow $yellow400,
+             red $red400,
+             white $white,
+             black $gray900,
+             cyan $cyan300,
+             navy $blue900,
+             lightblue $lightblue400,
+             lightsalmon $orange50,
+             lightgray $gray100;
+
+    @each $color in $colors {
+      $key: nth($color, 1);
+      $value: nth($color, 2);
+
+      &-#{$key} input[type="radio"]:checked + span:before {
+        background: #{$value};
+        border: 0.15em solid #{$value};
+      }
+    }
+  }
+}
