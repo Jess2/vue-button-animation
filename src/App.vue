@@ -1,25 +1,25 @@
 <template>
   <div id="app">
     <h1>vue-button-animation</h1>
-
-    <file-basic>Select File</file-basic>
-    <file-basic color="orange-border-2">Select File</file-basic>
-    <file-basic color="red" size="ss" multiple @change="onChange">Select File</file-basic>
-    <file-basic color="file" disabled>Select File</file-basic>
-    <file-basic color="file" name="file">Select File</file-basic>
-    <file-basic color="file" name="file" size="ss" weight="400">Select File</file-basic>
-    <file-basic color="file" accept=".jpg, .png" circle="100" @change="onChange">Select File</file-basic>
-    <file-basic color="file" accept=".jpg, .png" :loading-dot="true">Select File</file-basic>
+    <select-basic :options="options" v-model="selectVal" size="20px" width="100px"></select-basic>
+    <select-basic :options="options" selected="b" v-model="selectVal2"></select-basic>
+    <p>selectVal: {{selectVal}}</p>
+    <p>selectVal2: {{selectVal2}}</p>
   </div>
 </template>
 
 <script>
+import SelectBasic from "@/components/selectBasic";
 export default {
   name: 'app',
+  components: {SelectBasic},
   data() {
     return {
+      selectVal: '',
+      selectVal2: '',
       radioVal: '',
       checkboxVal: [],
+      options: ['a', 'b', 'c'],
     }
   },
   watch: {
