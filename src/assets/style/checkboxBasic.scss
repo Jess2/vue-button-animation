@@ -1,0 +1,80 @@
+@import 'colors.scss';
+
+.v-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.4em;
+
+  &.basic {
+    &.disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+
+      &, * {
+        cursor: pointer;
+      }
+
+      input {
+        opacity: 0;
+        position: absolute;
+
+        &:checked + .checkbox-btn > svg > path {
+          opacity: 1;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .checkbox-btn {
+        display: inline-block;
+        border: 0.15em solid $gray200;
+        border-radius: 14%;
+        margin: 0;
+        padding: 0;
+        width: 1em;
+        height: 1em;
+        overflow: hidden;
+        user-select: none;
+
+        > svg {
+          width: 100%;
+          height: 100%;
+          padding-top: 1px;
+
+          > path {
+            opacity: 0;
+            stroke-width: 2.3px;
+            stroke-dashoffset: 20;
+            stroke-dasharray: 20;
+            transition: stroke-dashoffset 0.15s ease-in;
+          }
+        }
+      }
+
+      .slot-wrapper {
+        display: flex;
+        align-items: center;
+        padding-left: 0.4em;
+      }
+    }
+
+    &.color {
+      @each $color in $simpleColors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+
+        &-#{$key} input[type="checkbox"]:checked + .checkbox-btn {
+          border: 0.15em solid #{$value};
+
+          > svg > path {
+            stroke: #{$value};
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
     <radio-basic value="1" v-model="radioVal" size="2em">
       Radio1
     </radio-basic>
-    <radio-basic value="2" v-model="radioVal" disabled>
+    <radio-basic value="2" v-model="radioVal" disabled size="l">
       Radio2
     </radio-basic>
     <br>
@@ -22,6 +22,23 @@
     </radio-basic>
 
     <p>radioVal : {{ radioVal }}</p>
+
+
+    <checkbox-basic value="1" v-model="checkboxVal" size="2em" checked>
+      checkbox1
+    </checkbox-basic>
+    <checkbox-basic value="2" v-model="checkboxVal" disabled>
+      checkbox2
+    </checkbox-basic>
+    <br>
+    <checkbox-basic value="3" color="yellow" v-model="checkboxVal">
+      checkbox3
+    </checkbox-basic>
+    <checkbox-basic value="4" color="blue" size="ss" v-model="checkboxVal">
+      checkbox4
+    </checkbox-basic>
+
+    <p>checkboxVal: {{checkboxVal}}</p>
   </div>
 </template>
 
@@ -31,6 +48,7 @@ export default {
   data() {
     return {
       radioVal: '',
+      checkboxVal: [],
     }
   },
   watch: {
