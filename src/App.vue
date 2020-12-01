@@ -62,7 +62,6 @@ export default {
 
 <style lang="scss">
 html {
-  font-family: sans-serif;
   padding: 50px 100px;
 }
 </style>
