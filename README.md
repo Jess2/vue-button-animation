@@ -61,7 +61,10 @@ In your components template:
       Id-3
     </checkbox-basic>
     ```
-
+* **file**
+    ```html
+    <file-basic @change="onChangeFile">Select File</file-basic>
+    ```
 <br>
 
 ## Components
@@ -96,6 +99,13 @@ In your components template:
     | Name           | Available Props                                                          |
     |----------------|--------------------------------------------------------------------------|
     | checkbox-basic | color, size, id, name, value, checked, required, disabled                |
+    
+* **file**  
+    It acts as the `input type="file"`.
+
+    | Name           | Available Props                                                          |
+    |----------------|--------------------------------------------------------------------------|
+    | checkbox-basic | color, size, id, name, accept, multiple, weight, width, height, disabled, loadingDot, circle, square |
 
 <br><br>
 
@@ -117,6 +127,9 @@ In your components template:
 | value         | **String** or **Boolean**                                                 | N/A           |
 | checked       | **Boolean**                                                               | false         |
 | required      | **Boolean**                                                               | false         |
+| accept        | **String**                                                                | *             |
+| multiple      | **Boolean**                                                               | false         |
+
 
 * **`color`** - You can set button's color to a [Predefined color](#Predefined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.

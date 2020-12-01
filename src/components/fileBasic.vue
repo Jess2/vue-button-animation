@@ -3,7 +3,7 @@
         enctype="multipart/form-data">
     <label :for='id'
            :class="classNames"
-           class="v-form basic"
+           class="v-file basic"
            :style="style"
            @click="onClick"
            @dblclick="onDblclick"
@@ -21,6 +21,8 @@
     </label>
     <input type="file"
            :accept="accept"
+           :multiple="multiple"
+           :files="files"
            :name="name"
            :id="id"
            @change="onChangeFile" />
@@ -33,12 +35,12 @@
   import createUuid from "@/assets/js/createUuid";
 
   export default {
-    name: 'form-basic',
+    name: 'file-basic',
     props: {
       id: {
         type: String,
         default: function () {
-          return 'v-form--' + createUuid();
+          return 'v-file--' + createUuid();
         },
       },
       name: {
@@ -48,6 +50,10 @@
       accept: {
         type: String,
         default: '*',
+      },
+      multiple: {
+        type: Boolean,
+        default: false,
       },
       color: {
         type: String,
