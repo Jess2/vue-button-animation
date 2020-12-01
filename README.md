@@ -112,7 +112,7 @@ In your components template:
 | hueRotate     | **String** or **Number**                                                  | 0             |
 | circle        | **String** or **Number**                                                  | N/A           |
 | square        | **String** or **Number**                                                  | N/A           |
-| id            | **String**                                                                | v-radio--{uuid}|
+| id            | **String**                                                                | v-{component type}--{uuid}|
 | name          | **String**                                                                | N/A           |
 | value         | **String** or **Boolean**                                                 | N/A           |
 | checked       | **Boolean**                                                               | false         |
