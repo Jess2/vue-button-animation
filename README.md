@@ -48,7 +48,19 @@ In your components template:
       Rabbit
     </radio-basic>
     ```
-
+* **checkbox**
+    ```html
+    <checkbox-basic value="1" v-model="selectedIds">
+      Id-1
+    </checkbox-basic>
+    <checkbox-basic value="2" v-model="selectedIds">
+      Id-2
+    </checkbox-basic>
+    <br>
+    <checkbox-basic value="3" v-model="selectedIds">
+      Id-3
+    </checkbox-basic>
+    ```
 
 <br>
 
@@ -77,6 +89,13 @@ In your components template:
     | Name           | Available Props                                                          |
     |----------------|--------------------------------------------------------------------------|
     | radio-basic    | color, size, id, name, value, checked, required, disabled                |
+    
+* **checkbox**  
+    It acts as the `input type="checkbox"`.
+
+    | Name           | Available Props                                                          |
+    |----------------|--------------------------------------------------------------------------|
+    | checkbox-basic | color, size, id, name, value, checked, required, disabled                |
 
 <br><br>
 
@@ -253,7 +272,7 @@ In your components template:
 
 <br>
 
-* **`radio-basic`**
+* **`radio-basic`**, **`checkbox-basic`**
     * primary, secondary, success, danger, warning, info, light, dark,
     blue, green, orange, yellow, red, white, black, ~~white-blue, file,~~ cyan, navy, lightblue, lightsalmon, lightgray
     * ~~white-border-\[1\~5\], white-border-blue-\[1\~5\], gray-border-\[1\~5\], blue-border-\[1\~5\], green-border-\[1\~5\], orange-border-\[1\~5\], yellow-border-\[1\~5\]~~
@@ -285,11 +304,11 @@ In your components template:
     ```html
     <button-basic color="yellow-border-1">
     <menu-icon />
-    Button
+       Button
     </button-basic>
     
     <a-basic>
-    Button
+      Button
     <arrow-icon />
     </a-basic>
     ```
