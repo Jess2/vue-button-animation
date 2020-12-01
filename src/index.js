@@ -8,6 +8,7 @@ import aNeon from './components/aNeon.vue';
 import radioBasic from "@/components/radioBasic";
 import checkboxBasic from "@/components/checkboxBasic";
 import fileBasic from "@/components/fileBasic";
+import selectBasic from "@/components/selectBasic";
 
 const BUTTON = {
   install (Vue) {
@@ -20,6 +21,7 @@ const BUTTON = {
     Vue.component(radioBasic.name, radioBasic);
     Vue.component(checkboxBasic.name, checkboxBasic);
     Vue.component(fileBasic.name, fileBasic);
+    Vue.component(selectBasic.name, selectBasic);
   }
 };
 if (typeof window !== 'undefined' && window.Vue) {
