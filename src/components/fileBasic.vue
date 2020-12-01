@@ -3,7 +3,7 @@
         enctype="multipart/form-data">
     <label :for='id'
            :class="classNames"
-           class="v-form basic"
+           class="v-file basic"
            :style="style"
            @click="onClick"
            @dblclick="onDblclick"
@@ -33,12 +33,12 @@
   import createUuid from "@/assets/js/createUuid";
 
   export default {
-    name: 'form-basic',
+    name: 'file-basic',
     props: {
       id: {
         type: String,
         default: function () {
-          return 'v-form--' + createUuid();
+          return 'v-file--' + createUuid();
         },
       },
       name: {
