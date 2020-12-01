@@ -60,7 +60,7 @@ export default {
     },
     modelValue: {
       type: Array,
-      default: new Array(),
+      default: null,
     },
     checked: {
       type: Boolean,
@@ -80,7 +80,7 @@ export default {
       if (this.modelValue === null) {
         return this.checked;
       }
-      return this.modelValue.indexOf(this.value) !== -1;
+      return Array.isArray(this.modelValue) ? this.modelValue.indexOf(this.value) !== -1 : false;
     },
     style() {
       return setStyle(this);
@@ -94,7 +94,7 @@ export default {
       this.toggle();
     },
     toggle() {
-      let checkedValues = [...this.modelValue];
+      let checkedValues =  Array.isArray(this.modelValue) ? [...this.modelValue] : [];
 
       if (this.isChecked) {
         checkedValues.splice(checkedValues.indexOf(this.value), 1);

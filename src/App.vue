@@ -31,10 +31,10 @@
       checkbox2
     </checkbox-basic>
     <br>
-    <checkbox-basic value="3" color="yellow" v-model="checkboxVal">
+    <checkbox-basic value="3" color="yellow">
       checkbox3
     </checkbox-basic>
-    <checkbox-basic value="4" color="blue" size="ss" v-model="checkboxVal">
+    <checkbox-basic value="4" color="blue" size="ss">
       checkbox4
     </checkbox-basic>
 
