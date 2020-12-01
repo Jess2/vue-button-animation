@@ -21,6 +21,8 @@
     </label>
     <input type="file"
            :accept="accept"
+           :multiple="multiple"
+           :files="files"
            :name="name"
            :id="id"
            @change="onChangeFile" />
@@ -48,6 +50,10 @@
       accept: {
         type: String,
         default: '*',
+      },
+      multiple: {
+        type: Boolean,
+        default: false,
       },
       color: {
         type: String,

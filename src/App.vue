@@ -4,7 +4,7 @@
 
     <file-basic>Select File</file-basic>
     <file-basic color="orange-border-2">Select File</file-basic>
-    <file-basic color="red" size="ss">Select File</file-basic>
+    <file-basic color="red" size="ss" multiple @change="onChange">Select File</file-basic>
     <file-basic color="file" disabled>Select File</file-basic>
     <file-basic color="file" name="file">Select File</file-basic>
     <file-basic color="file" name="file" size="ss" weight="400">Select File</file-basic>
