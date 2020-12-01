@@ -1,4 +1,4 @@
-@import 'radioColors.scss';
+@import 'colors.scss';
 
 .v-radio {
   display: inline-block;
@@ -6,15 +6,15 @@
   padding-right: 0.4em;
 
   &.basic {
+    &.disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
     > label {
       display: flex;
       justify-content: center;
       cursor: pointer;
-
-      &.disabled {
-        opacity: 0.3;
-        pointer-events: none;
-      }
 
       > input[type="radio"] {
         position: absolute;
@@ -27,14 +27,14 @@
         clip: rect(0,0,0,0);
         border: 0;
 
-        &:checked + span.radio-btn {
+        &:checked + .radio-btn {
           &:before {
             box-shadow: inset 0 0 0 0.2em #ffffff;
           }
         }
       }
 
-      span.radio-btn {
+      .radio-btn {
         display: flex;
         align-items: center;
         transition: 0.25s;
@@ -43,19 +43,31 @@
           display: flex;
           content: "";
           background-color: #ffffff;
-          width: 1.1em;
-          height: 1.1em;
+          width: 1em;
+          height: 1em;
           border-radius: 50%;
           transition: 0.25s;
           box-shadow: inset 0 0 0 0.8em #ffffff;
-          border: 0.15em solid #ced4da;
+          border: 0.15em solid $gray200;
         }
       }
 
-      span.slot-wrapper {
+      .slot-wrapper {
         display: flex;
         align-items: center;
         padding-left: 0.4em;
+      }
+    }
+
+    &.color {
+      @each $color in $simpleColors {
+        $key: nth($color, 1);
+        $value: nth($color, 2);
+
+        &-#{$key} input[type="radio"]:checked + .radio-btn:before {
+          background: #{$value};
+          border: 0.15em solid #{$value};
+        }
       }
     }
   }
