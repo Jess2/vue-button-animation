@@ -1,5 +1,7 @@
 # Vue Button Animation Components
-This library is collection of Vue single-file components to render animated buttons.
+> This library is collection of Vue single-file components to render animated buttons.
+
+[![Software License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://github.com/JESS2/vue-button-animation/blob/main/LICENSE.md) [![Latest Version on NPM](https://img.shields.io/npm/v/vue-button-animation.svg?style=flat-square)](https://npmjs.com/package/vue-button-animation) [![npm](https://img.shields.io/npm/dt/vue-button-animation.svg?style=flat-square)](https://www.npmjs.com/package/vue-button-animation)
 
 <br>
 
@@ -26,47 +28,55 @@ Vue.use(VueButtonAnimation);
 <br>
 
 In your components template:
-```vue
-<button-basic>Button</button-basic>
-<a-basic>Button</a-basic>
-```
+* **button**
+    ```vue
+    <button-basic>Button</button-basic>
+    ```
+* **a**
+    ```vue
+    <a-basic>Button</a-basic>
+    ```
+* **radio**
+    ```html
+    <radio-basic value="dog" v-model="selectedAnimal">
+      Dog
+    </radio-basic>
+    <radio-basic value="cat" v-model="selectedAnimal">
+      Cat
+    </radio-basic>
+    <radio-basic value="rabbit" v-model="selectedAnimal">
+      Rabbit
+    </radio-basic>
+    ```
+
 
 <br>
 
 ## Components
-| Name           | Available Props                                                          |
-|----------------|--------------------------------------------------------------------------|
-| button-basic   | color, size, weight, width, height, loadingDot, circle, square           |
-| a-basic        | color, size, weight, width, height, disabled, loadingDot, circle, square |
-| button-press   | color, size, weight, width, height, loadingDot                           |
-| a-press        | color, size, weight, width, height, disabled, loadingDot                 |
-| button-neon    | size, weight, width, height, loadingDot, hueRotate                       |
-| a-neon         | size, weight, width, height, disabled, loadingDot, hueRotate             |
-| radio-basic    | color, size, id, name, value, checked, required, disabled                |
+* **button**  
+    It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`.
 
-* **`button-{type}`** - It acts as the `button` element. So it performs the basic attributes of `button` element like `disabled`.
-    * Example:
-        ```html
-          <button-basic>Button</button-basic>
-        ```
-* **`a-{type}`** - It acts as the `a` element. So it performs the basic attributes of `a` element like `href`.
-    * Example:
-        ```html
-          <a-basic>Button</a-basic>
-        ```
-* **`radio-{type}`** - It acts as the `input type="radio"`.
-    * Example:
-        ```html
-          <radio-basic value="dog" v-model="selectedAnimal" checked>
-            Dog
-          </radio-basic>
-          <radio-basic value="cat" v-model="selectedAnimal" disabled>
-            Cat
-          </radio-basic>
-          <radio-basic value="rabbit" v-model="selectedAnimal" color="yellow" size="2em">
-            Rabbit
-          </radio-basic>
-        ```
+    | Name           | Available Props                                                          |
+    |----------------|--------------------------------------------------------------------------|
+    | button-basic   | color, size, weight, width, height, loadingDot, circle, square           |
+    | button-press   | color, size, weight, width, height, loadingDot                           |
+    | button-neon    | size, weight, width, height, loadingDot, hueRotate                       |
+
+* **a**  
+    It acts as the `a` element. So it performs the basic attributes of `a` element like `href`.
+
+    | Name           | Available Props                                                          |
+    |----------------|--------------------------------------------------------------------------|
+    | a-basic        | color, size, weight, width, height, disabled, loadingDot, circle, square |
+    | a-press        | color, size, weight, width, height, disabled, loadingDot                 |
+    | a-neon         | size, weight, width, height, disabled, loadingDot, hueRotate             |
+
+* **radio**  
+    It acts as the `input type="radio"`.
+
+    | Name           | Available Props                                                          |
+    |----------------|--------------------------------------------------------------------------|
+    | radio-basic    | color, size, id, name, value, checked, required, disabled                |
 
 <br><br>
 
@@ -94,9 +104,9 @@ In your components template:
 
     Example:
     ```html
-      <button-basic>Button</button-basic>  <!-- By default, this is `primary`. -->
-      <button-basic color="secondary">Button</button-basic>
-      <button-basic color="white-border-3">Button</button-basic>
+    <button-basic>Button</button-basic>  <!-- By default, this is `primary`. -->
+    <button-basic color="secondary">Button</button-basic>
+    <button-basic color="white-border-3">Button</button-basic>
     ```
 <br>
 
@@ -113,13 +123,13 @@ In your components template:
         
     Example:
     ```html
-      <button-basic>Button</button-basic> <!-- By default, this is `m` -->
-      <button-basic size="20">Button</button-basic> <!-- 20px -->
-      <button-basic :size="20">Button</button-basic> <!-- 20px -->
-      <button-basic size="20px">Button</button-basic> <!-- 20px -->
-      <button-basic size="2em">Button</button-basic> <!-- 2em -->
-      <button-basic size="1rem">Button</button-basic> <!-- 1rem -->
-      <button-basic size="s">Button</button-basic> <!-- 0.875rem -->
+    <button-basic>Button</button-basic> <!-- By default, this is `m` -->
+    <button-basic size="20">Button</button-basic> <!-- 20px -->
+    <button-basic :size="20">Button</button-basic> <!-- 20px -->
+    <button-basic size="20px">Button</button-basic> <!-- 20px -->
+    <button-basic size="2em">Button</button-basic> <!-- 2em -->
+    <button-basic size="1rem">Button</button-basic> <!-- 1rem -->
+    <button-basic size="s">Button</button-basic> <!-- 0.875rem -->
     ```
 <br>
 
@@ -128,10 +138,10 @@ In your components template:
     
     Example:
     ```html
-      <button-basic>Button</button-basic>  <!-- By default, this is `800`. -->
-      <button-basic weight="400">Button</button-basic>
-      <button-basic :weight="400">Button</button-basic>
-      <button-basic weight="bold">Button</button-basic>
+    <button-basic>Button</button-basic>  <!-- By default, this is `800`. -->
+    <button-basic weight="400">Button</button-basic>
+    <button-basic :weight="400">Button</button-basic>
+    <button-basic weight="bold">Button</button-basic>
     ```
 <br>
 
@@ -142,12 +152,12 @@ In your components template:
     
     Example:
     ```html
-      <button-basic>Button</button-basic> <!-- The width is automatically calculated -->
-      <button-basic width="150">Button</button-basic> <!-- 150px -->
-      <button-basic :width="150">Button</button-basic> <!-- 150px -->
-      <button-basic width="150px">Button</button-basic> <!-- 150px -->
-      <button-basic width="20em">Button</button-basic> <!-- 20em -->
-      <button-basic width="30rem">Button</button-basic> <!-- 30rem -->
+    <button-basic>Button</button-basic> <!-- The width is automatically calculated -->
+    <button-basic width="150">Button</button-basic> <!-- 150px -->
+    <button-basic :width="150">Button</button-basic> <!-- 150px -->
+    <button-basic width="150px">Button</button-basic> <!-- 150px -->
+    <button-basic width="20em">Button</button-basic> <!-- 20em -->
+    <button-basic width="30rem">Button</button-basic> <!-- 30rem -->
     ```
 <br>
 
@@ -158,12 +168,12 @@ In your components template:
     
     Example:
     ```html
-      <button-basic>Button</button-basic> <!-- The height is automatically calculated -->
-      <button-basic height="40">Button</button-basic> <!-- 40px -->
-      <button-basic :height="40">Button</button-basic> <!-- 40px -->
-      <button-basic height="40px">Button</button-basic> <!-- 40px -->
-      <button-basic height="3em">Button</button-basic> <!-- 3em -->
-      <button-basic height="4rem">Button</button-basic> <!-- 4rem -->
+    <button-basic>Button</button-basic> <!-- The height is automatically calculated -->
+    <button-basic height="40">Button</button-basic> <!-- 40px -->
+    <button-basic :height="40">Button</button-basic> <!-- 40px -->
+    <button-basic height="40px">Button</button-basic> <!-- 40px -->
+    <button-basic height="3em">Button</button-basic> <!-- 3em -->
+    <button-basic height="4rem">Button</button-basic> <!-- 4rem -->
     ```
 <br>
 
@@ -171,12 +181,12 @@ In your components template:
                   
     Example:
     ```html
-      <button-basic disabled>Button</button-basic>
-      <button-basic :disabled="true">Button</button-basic>
-      <button-basic :disabled="false">Button</button-basic>
-      <a-basic disabled>Link</a-basic>
-      <a-basic :disabled="true">Link</a-basic>
-      <a-basic :disabled="false">Link</a-basic>
+    <button-basic disabled>Button</button-basic>
+    <button-basic :disabled="true">Button</button-basic>
+    <button-basic :disabled="false">Button</button-basic>
+    <a-basic disabled>Link</a-basic>
+    <a-basic :disabled="true">Link</a-basic>
+    <a-basic :disabled="false">Link</a-basic>
     ```
 <br>
 
@@ -184,12 +194,12 @@ In your components template:
                   
     Example:
     ```html
-      <button-basic loadingDot>Button</button-basic>
-      <button-basic :loadingDot="true">Button</button-basic>
-      <button-basic :loadingDot="false">Button</button-basic>
-      <a-basic loadingDot>Link</a-basic>
-      <a-basic :loadingDot="true">Link</a-basic>
-      <a-basic :loadingDot="false">Link</a-basic>
+    <button-basic loadingDot>Button</button-basic>
+    <button-basic :loadingDot="true">Button</button-basic>
+    <button-basic :loadingDot="false">Button</button-basic>
+    <a-basic loadingDot>Link</a-basic>
+    <a-basic :loadingDot="true">Link</a-basic>
+    <a-basic :loadingDot="false">Link</a-basic>
     ```
   
 <br>
@@ -200,12 +210,12 @@ In your components template:
 
     Example:
     ```html
-      <button-neon :hueRotate="180">BUTTON</button-neon>
-      <button-neon hueRotate="180">BUTTON</button-neon>
-      <button-neon hueRotate="270">BUTTON</button-neon>
-      <a-neon :hueRotate="180">LINK</a-neon>
-      <a-neon hueRotate="180">LINK</a-neon>
-      <a-neon hueRotate="270">LINK</a-neon>
+    <button-neon :hueRotate="180">BUTTON</button-neon>
+    <button-neon hueRotate="180">BUTTON</button-neon>
+    <button-neon hueRotate="270">BUTTON</button-neon>
+    <a-neon :hueRotate="180">LINK</a-neon>
+    <a-neon hueRotate="180">LINK</a-neon>
+    <a-neon hueRotate="270">LINK</a-neon>
     ```
   
 <br>
@@ -217,12 +227,12 @@ In your components template:
     
     Example:
     ```html
-      <button-basic circle="10em">Button</button-basic>
-      <button-basic :circle="100">Button</button-basic>
-      <button-basic circle="100">Button</button-basic>
-      <button-basic sqaure="10em">Button</button-basic>
-      <button-basic :square="100">Button</button-basic>
-      <button-basic square="100">Button</button-basic>
+    <button-basic circle="10em">Button</button-basic>
+    <button-basic :circle="100">Button</button-basic>
+    <button-basic circle="100">Button</button-basic>
+    <button-basic sqaure="10em">Button</button-basic>
+    <button-basic :square="100">Button</button-basic>
+    <button-basic square="100">Button</button-basic>
     ```
 
 <br><br>
@@ -273,20 +283,20 @@ In your components template:
      
     Example:
     ```html
-      <button-basic color="yellow-border-1">
-        <menu-icon />
-        Button
-      </button-basic>
-  
-      <a-basic>
-        Button
-        <arrow-icon />
-      </a-basic>
+    <button-basic color="yellow-border-1">
+    <menu-icon />
+    Button
+    </button-basic>
+    
+    <a-basic>
+    Button
+    <arrow-icon />
+    </a-basic>
     ```
 
 <br><br>
 
 ## License
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://github.com/JESS2/vue-button-animation/blob/main/LICENSE.md)
 
 <br>
