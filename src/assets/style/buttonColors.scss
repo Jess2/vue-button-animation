@@ -1,6 +1,7 @@
 @import 'colors.scss';
 
-.v-btn {
+.v-btn,
+.v-form {
   &.color {
     &-primary,
     &-primary .slot-wrapper {
