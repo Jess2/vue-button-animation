@@ -2,7 +2,7 @@
   <span :class="classNames"
         class="v-radio basic"
         :style="style">
-    <label :for="id" :class="{'disabled' : disabled}">
+    <label :for="id">
       <input type="radio"
              :id="id"
              :name="name"
@@ -10,7 +10,8 @@
              :required="required"
              :disabled="disabled"
              :checked="isChecked"
-             @change="onChange"/>
+             @change="onChange"
+      />
       <span class="radio-btn">
       </span>
       <span class="slot-wrapper">
@@ -73,7 +74,7 @@
     },
     computed: {
       isChecked () {
-        if (!this.modelValue) {
+        if (this.modelValue === null) {
           return this.checked;
         }
         return this.modelValue === this.value;
