@@ -13,7 +13,8 @@
   }
 }
 
-.v-btn {
+.v-btn,
+.v-form {
   &.loading {
     opacity: 0.3;
     pointer-events: none;
