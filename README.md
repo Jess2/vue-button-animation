@@ -112,7 +112,7 @@ In your components template:
 ## Props
 | Prop          | Type (Range)                                                              | Default value |
 |---------------|---------------------------------------------------------------------------|---------------|
-| color         | **String** ([Predefined Colors](#Predefined-colors))                      | primary       |
+| color         | **String** ([Predefined Colors](#predefined-colors))                      | primary       |
 | size          | **String** (`ss`, `s`, `m`, `l`) or **Number**                            | m             |
 | weight        | **String** (normal, bold, bolder, lighter, ...) or **Number** (100 ~ 900) | 800           |
 | width         | **String** or **Number**                                                  | N/A           |
@@ -131,7 +131,7 @@ In your components template:
 | multiple      | **Boolean**                                                               | false         |
 
 
-* **`color`** - You can set button's color to a [Predefined color](#Predefined-colors)
+* **`color`** - You can set button's color to a [Predefined color](#predefined-colors)
     And if you want to set button's color to another color, you can customize the class or change the style. By default, this is `primary`.
 
     Example:
