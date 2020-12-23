@@ -1,5 +1,15 @@
-.v-btn {
+* {
     font-family: sans-serif;
+}
+form {
+    display: inline-block;
+
+    input[type="file"] {
+        display: none;
+    }
+}
+.v-btn,
+.v-file {
     position: relative;
     width: fit-content;
     height: fit-content;
