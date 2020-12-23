@@ -1,18 +1,13 @@
 <template>
   <div id="app">
     <h1>vue-button-animation</h1>
-    <select-basic :options="options" v-model="selectVal" size="20px" width="100px"></select-basic>
-    <select-basic :options="options" selected="b" v-model="selectVal2"></select-basic>
-    <p>selectVal: {{selectVal}}</p>
-    <p>selectVal2: {{selectVal2}}</p>
   </div>
 </template>
 
 <script>
-import SelectBasic from "@/components/selectBasic";
 export default {
   name: 'app',
-  components: {SelectBasic},
+  components: {},
   data() {
     return {
       selectVal: '',
