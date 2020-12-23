@@ -4,134 +4,134 @@
 .v-file {
   &.color {
     &-primary,
-    &-primary .slot-wrapper {
+    &-primary.press .slot-wrapper {
       background: #0069d9;
       color: $white;
     }
 
     &-secondary,
-    &-secondary .slot-wrapper {
+    &-secondary.press .slot-wrapper {
       background: #6c757d;
       color: $white;
     }
 
     &-success,
-    &-success .slot-wrapper {
+    &-success.press .slot-wrapper {
       background: #28a745;
       color: $white;
     }
 
     &-danger,
-    &-danger .slot-wrapper {
+    &-danger.press .slot-wrapper {
       background: #c82333;
       color: $white;
     }
 
     &-warning,
-    &-warning .slot-wrapper {
+    &-warning.press .slot-wrapper {
       background: #ffc107;
       color: $white;
     }
 
     &-info,
-    &-info .slot-wrapper {
+    &-info.press .slot-wrapper {
       background: #17a2b8;
       color: $white;
     }
 
     &-light,
-    &-light .slot-wrapper {
+    &-light.press .slot-wrapper {
       background: #f8f9fa;
       color: #343a40;
     }
 
     &-dark,
-    &-dark .slot-wrapper {
+    &-dark.press .slot-wrapper {
       background: #343a40;
       color: $white;
     }
 
     &-blue,
-    &-blue .slot-wrapper {
+    &-blue.press .slot-wrapper {
       background: $blue500;
       color: $white;
     }
 
     &-green,
-    &-green .slot-wrapper {
+    &-green.press .slot-wrapper {
       background: $green400;
       color: $white;
     }
 
     &-orange,
-    &-orange .slot-wrapper {
+    &-orange.press .slot-wrapper {
       background: $orange400;
       color: $white;
     }
 
     &-yellow,
-    &-yellow .slot-wrapper {
+    &-yellow.press .slot-wrapper {
       background: $yellow400;
       color: $white;
     }
 
     &-red,
-    &-red .slot-wrapper {
+    &-red.press .slot-wrapper {
       background: $red400;
       color: $white;
     }
 
     &-white,
-    &-white .slot-wrapper {
+    &-white.press .slot-wrapper {
       background: $white;
       color: $gray900;
     }
 
     &-black,
-    &-black .slot-wrapper {
+    &-black.press .slot-wrapper {
       background: $gray900;
       color: $white;
     }
 
     &-white-blue,
-    &-white-blue .slot-wrapper {
+    &-white-blue.press .slot-wrapper {
       background: $white;
       color: $blue500;
     }
 
     &-file,
-    &-file .slot-wrapper {
+    &-file.press .slot-wrapper {
       background: linear-gradient(to bottom, $white 1%, $gray100);
       color: $gray900;
-      box-shadow: 0 0 0 0.5px $gray400 inset;
+      box-shadow: 0 0 0 0.5px $gray300 inset;
     }
 
     &-cyan,
-    &-cyan .slot-wrapper {
+    &-cyan.press .slot-wrapper {
       background: $cyan300;
       color: $white;
     }
 
     &-navy,
-    &-navy .slot-wrapper {
+    &-navy.press .slot-wrapper {
       background: $blue900;
       color: $white;
     }
 
     &-lightblue,
-    &-lightblue .slot-wrapper {
+    &-lightblue.press .slot-wrapper {
       background: $lightblue400;
       color: $white;
     }
 
     &-lightsalmon,
-    &-lightsalmon .slot-wrapper {
+    &-lightsalmon.press .slot-wrapper {
       background: $orange50;
       color: $orange400;
     }
 
     &-lightgray,
-    &-lightgray .slot-wrapper {
+    &-lightgray.press .slot-wrapper {
       background: $gray100;
       color: $gray500;
     }
