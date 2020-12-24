@@ -1,7 +1,7 @@
 .v-btn {
   &.neon {
     padding: 0.8em 1.5em 0.9em;
-    background: transparent;
+    background-color: transparent;
     color: #03e9f4;
     overflow: hidden;
     transition: 0.5s;
@@ -16,7 +16,7 @@
     }
 
     &:not(:disabled):not(.disabled):hover {
-      background: #03e9f4;
+      background-color: #03e9f4;
       color: #050801;
       box-shadow: 0 0 5px #03e9f4,
                   0 0 10px #03e9f4,

@@ -65,7 +65,7 @@
         $value: nth($color, 2);
 
         &-#{$key} input[type="radio"]:checked + .radio-btn:before {
-          background: #{$value};
+          background-color: #{$value};
           border: 0.15em solid #{$value};
         }
       }
