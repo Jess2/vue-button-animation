@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>vue-button-animation</h1>
+    <button-basic color="file">fff</button-basic>
   </div>
 </template>
 
